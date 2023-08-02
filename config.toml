@@ -1,0 +1,17 @@
+baseURL = "https://JetJaguar-PSX.github.io/"
+languageCode = "ja-JP"
+title = " T.Tanaka's notes"
+theme = "github-style"
+
+[params]
+  author = "T.Tanaka"
+  description = "島根大学ものづくり部Pim"
+  url = "https://JetJaguar-PSX.github.io/"
+  keywords = "自作キーボード設計, Unity, 空間オーディオ, ものづくり"
+  favicon = "/images/shiitake.png"
+  location = "Japan"
+  enableGitalk = false
+
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
