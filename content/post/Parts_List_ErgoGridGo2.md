@@ -4,7 +4,7 @@ date: 2024-03-05T00:00:00+09:00
 description : ""
 tags: [""]
 image : ""
-draft: true
+draft: false
 ---
 
 2024/03/02のキーボードマーケット トーキョーにて頒布した、ErgoGridGo2 v1.0 ボードのみのパーツリストです。

@@ -6,8 +6,15 @@
     <description>Recent content in Posts on しいたけの部屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 18 Feb 2024 22:06:23 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://jetJaguar-psx.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ErgoGridGo2 v1.0 ボードのみ 必要なパーツのリスト</title>
+      <link>https://jetJaguar-psx.github.io/post/parts_list_ergogridgo2/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0900</pubDate>
+      <guid>https://jetJaguar-psx.github.io/post/parts_list_ergogridgo2/</guid>
+      <description>2024/03/02のキーボードマーケット トーキョーにて頒布した、ErgoGridGo2 v1.0 ボードのみのパーツリストです。&#xA;セット内容 内容物に過不足が無いかご確認のほどお願いします。不備や不良がございましたらご連絡ください。&#xA;品目 内容量 PCB 1枚 ボトムプレート 1枚 トッププレート 1枚 × 2種 別途必要なパーツ 一部の品目は商品ページへの外部リンクがあります。品目をクリックすると商品ページへ移動します。&#xA;品目 必要量 マイコンボード（Pro micro） 1 コンスルー（12ピン 高さ2mm） 2 キースイッチ（Kailh ChocまたはCherry MX互換） 54 1Uキーキャップ 54 タクトスイッチ 1 TRRSジャック 1 ダイオード（リードタイプ） ※1 54 M3ネジ 3mm 30 M3 4mmスペーサー 12 M3 7mmスペーサー ※2 3 ※1 SMDタイプのダイオードは使用できません。</description>
+    </item>
     <item>
       <title>キーボードマーケット 出展情報</title>
       <link>https://jetJaguar-psx.github.io/post/keyboard_market_2024/</link>
