@@ -1,5 +1,5 @@
 ---
-title: "ErgoGridGo2 ビルドガイド 簡易版"
+title: "ErgoGridGo2 ビルドガイド"
 date: 2024-03-06T00:25:45+09:00
 description : ""
 tags: [""]
