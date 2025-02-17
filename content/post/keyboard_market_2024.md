@@ -23,7 +23,7 @@ draft: false
 
 ※お品書きは随時更新しますので、時々ご確認いただけると幸いです。
 
-&nbsp;
+&nbsp;e
 
 ### ErgoGridGo
 
