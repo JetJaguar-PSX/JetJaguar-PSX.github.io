@@ -61,6 +61,12 @@ Unity 1week ゲームジャムに向けて、学生2名社会人2名で製作し
 
 &nbsp;
 
+### 風で速さを感じるVRレースゲーム
+
+レースゲームにおける車両の速さに連動して、スマートリモコンを介して扇風機を制御するシステムを実装しました。
+
+&nbsp;
+
 ### Vic Field
 
 ![](/images/subfolder/minigame/VicField_1.jpg)

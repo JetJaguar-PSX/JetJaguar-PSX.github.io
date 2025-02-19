@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jetJaguar-psx.github.io/subfolder/</loc>
-    <lastmod>2025-02-10T00:00:00+09:00</lastmod>
+    <lastmod>2025-02-14T00:00:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jetJaguar-psx.github.io/subfolder/five-sense_hacking/</loc>
+    <lastmod>2025-02-14T00:00:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://jetJaguar-psx.github.io/</loc>
-    <lastmod>2025-02-10T00:00:00+09:00</lastmod>
+    <lastmod>2025-02-14T00:00:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="jp" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>ガジェットで五感をHackする - しいたけの部屋</title>
+<meta name="description" content="こんにちは。しいたけです。
+情報機器やガジェットは、コンテンツや使い方次第で、私たちに多種多様な体験をもたらします。 新たな楽しい体験をつくるには、機械から人への情報の伝達、つまり五感への作用が重要な要素になります。 近年、私は「ガジェットで五感をHackする」というテーマで、様々な機器を集め、 組み合わせることで新たな体験が創出できないか模索しています。
+この記事では、そんな試行錯誤の一端を紹介します。
+空間音響 × モーショントラッキング 空間音響は、実空間や仮想空間の聴こえ方を再現でき、従来のステレオやサラウンドなどの再生方式よりも幅広い表現が可能です。私は空間音響とXR機器を組み合わせ、ユーザのモーションに連動してスピーカの挙動を制御するシステムを製作しています。そのシステムによって、新たな表現が可能であると発見しました。今後は、空間音響や、それとモーション操作の組み合わせによって、どのような娯楽を創出できるか模索する予定です。
+”覗き窓”を広げる 情報端末の表示部は、端末の中で行われていることを人間が視るための言わば”覗き窓”のような存在だと思っています。この覗き窓を広げる、つまりより広い表示領域を得ることが、情報端末の利活用にどのような影響を与えるか興味があり、大画面や空間コンピューティングを試しています。
+力を錯覚させる ある時、振動アクチュエータに偏った波形の信号を流すことで、あたかも一方向に押されるように感じるという内容の論文を見つけました。それを実際に体験したいと考え、即座に部品と機材を買い揃え、振動アクチュエータによる力覚を体験できるプロトタイプシステムを実装しました。手に振動アクチュエータを持ち、適切な信号を流すと確かに押されるような感覚があり、無意識に手が動きました。振動アクチュエータはただ振動による表現をするだけではなく、人間の挙動に作用できる可能性があります。これをモーション操作のゲームと組み合わせることで、新たな体験を実現できないかと考えています。
+香りと音で、よりコンテンツに没入できる空気感をつくる 既存のVR機器は、立体視対応の全天球映像により、高い臨場感を得られます。もし、VRに視覚以外の刺激を追加すると没入感はどう変わるのでしょうか。VR機器に空間音響対応の5.2.4chホームシアターシステムを接続し、コンテンツに近いイメージのルームフレグランスを置き、音と香りによって没入感への変化を探ります。
+番外編：音声信号によってコーヒーの味を変える 通常は数時間かかる水出しコーヒーの抽出を、超音波の振動を用いて3分以内に短縮する研究があります。それを参考にして、振動アクチュエータを用いたコーヒー抽出システムを実装しました。このシステムによるコーヒーの抽出を試す過程で、振動アクチュエータに流す音声信号によってコーヒーの味が変わることを発見しました。今後は、音声信号とコーヒーの味の関係性を調査する予定です。
+おわりに ものづくりにおいて、機能性や有用性は大事な要素であり、それをおろそかにはできません。 しかし、客観的な価値だけでなく、使う人がどのような体験を得られるかという点にも注目したいです。">
+
+<meta name="author" content="Shiitake"><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "しいたけの部屋",
+    
+    "url": "https:\/\/jetJaguar-psx.github.io\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/jetJaguar-psx.github.io\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/jetJaguar-psx.github.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/jetJaguar-psx.github.io\/subfolder\/five-sense_hacking\/",
+          "name": "ガジェットで五感を hackする"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Shiitake"
+  },
+  "headline": "ガジェットで五感をHackする",
+  "description" : "こんにちは。しいたけです。\n情報機器やガジェットは、コンテンツや使い方次第で、私たちに多種多様な体験をもたらします。 新たな楽しい体験をつくるには、機械から人への情報の伝達、つまり五感への作用が重要な要素になります。 近年、私は「ガジェットで五感をHackする」というテーマで、様々な機器を集め、 組み合わせることで新たな体験が創出できないか模索しています。\nこの記事では、そんな試行錯誤の一端を紹介します。\n空間音響 × モーショントラッキング 空間音響は、実空間や仮想空間の聴こえ方を再現でき、従来のステレオやサラウンドなどの再生方式よりも幅広い表現が可能です。私は空間音響とXR機器を組み合わせ、ユーザのモーションに連動してスピーカの挙動を制御するシステムを製作しています。そのシステムによって、新たな表現が可能であると発見しました。今後は、空間音響や、それとモーション操作の組み合わせによって、どのような娯楽を創出できるか模索する予定です。\n”覗き窓”を広げる 情報端末の表示部は、端末の中で行われていることを人間が視るための言わば”覗き窓”のような存在だと思っています。この覗き窓を広げる、つまりより広い表示領域を得ることが、情報端末の利活用にどのような影響を与えるか興味があり、大画面や空間コンピューティングを試しています。\n力を錯覚させる ある時、振動アクチュエータに偏った波形の信号を流すことで、あたかも一方向に押されるように感じるという内容の論文を見つけました。それを実際に体験したいと考え、即座に部品と機材を買い揃え、振動アクチュエータによる力覚を体験できるプロトタイプシステムを実装しました。手に振動アクチュエータを持ち、適切な信号を流すと確かに押されるような感覚があり、無意識に手が動きました。振動アクチュエータはただ振動による表現をするだけではなく、人間の挙動に作用できる可能性があります。これをモーション操作のゲームと組み合わせることで、新たな体験を実現できないかと考えています。\n香りと音で、よりコンテンツに没入できる空気感をつくる 既存のVR機器は、立体視対応の全天球映像により、高い臨場感を得られます。もし、VRに視覚以外の刺激を追加すると没入感はどう変わるのでしょうか。VR機器に空間音響対応の5.2.4chホームシアターシステムを接続し、コンテンツに近いイメージのルームフレグランスを置き、音と香りによって没入感への変化を探ります。\n番外編：音声信号によってコーヒーの味を変える 通常は数時間かかる水出しコーヒーの抽出を、超音波の振動を用いて3分以内に短縮する研究があります。それを参考にして、振動アクチュエータを用いたコーヒー抽出システムを実装しました。このシステムによるコーヒーの抽出を試す過程で、振動アクチュエータに流す音声信号によってコーヒーの味が変わることを発見しました。今後は、音声信号とコーヒーの味の関係性を調査する予定です。\nおわりに ものづくりにおいて、機能性や有用性は大事な要素であり、それをおろそかにはできません。 しかし、客観的な価値だけでなく、使う人がどのような体験を得られるかという点にも注目したいです。",
+  "inLanguage" : "jp",
+  "wordCount":  21 ,
+  "datePublished" : "2025-02-14T00:00:00",
+  "dateModified" : "2025-02-14T00:00:00",
+  "image" : "https:\/\/jetJaguar-psx.github.io\/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/jetJaguar-psx.github.io\/subfolder\/five-sense_hacking\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/jetJaguar-psx.github.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/jetJaguar-psx.github.io\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:url" content="https://jetJaguar-psx.github.io/subfolder/five-sense_hacking/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="しいたけの部屋">
+
+<link rel="apple-touch-icon" sizes="180x180" href=" https://jetJaguar-psx.github.io/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jetJaguar-psx.github.io/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jetJaguar-psx.github.io/favicon/favicon-16x16.png">
+
+
+<meta name="generator" content="Hugo 0.106.0">
+<link rel="alternate" href="https://jetJaguar-psx.github.io/index.xml" type="application/rss+xml" title="しいたけの部屋">
+<script src="https://jetJaguar-psx.github.io/js/dark-mode.js"></script><script src="https://jetJaguar-psx.github.io/vendor/lunr/lunr.min.js"></script><script src="https://jetJaguar-psx.github.io/vendor/lunr/lunr.stemmer.support.js"></script>
+        <script src="https://jetJaguar-psx.github.io/vendor/lunr/lunr.jp.js"></script><script src="https://jetJaguar-psx.github.io/js/lunr-search.js" data-index="/search.json"></script><link rel="stylesheet" href="/style.min.css">
+
+
+
+
+
+
+
+  </head>
+  <body>
+    
+<div class="container fixed-top mw-100">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
+        <div class="container">
+
+          <a class="navbar-brand fw-bold" href="https://jetJaguar-psx.github.io/">しいたけの部屋</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-baseline">
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Home"
+                  href="/"> Home</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Posts"
+                  href="/post/"> Posts</a>
+              </li>
+
+              
+              
+
+              <li class="nav-item nav-link">
+                <a id="dark-mode-toggle" class="bi bi-moon-stars" role="button"></a>
+              </li>
+
+              
+              <li class="nav-item search-item">
+                <form id="search" class="search" role="search">
+                  <label for="search-input" class="bi bi-search search-icon"></label>
+                  <input type="search" id="search-input" class="search-input">
+                </form>
+              </li>
+              
+            </ul>
+
+            
+            <template id="search-heading" hidden
+                data-results-none=""
+                data-results-one=""
+                data-results-many=""
+            >
+              <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+                  <h1 id="search-title" class="search-title"></h1>
+                </div>
+              </div>
+            </template>
+
+            <template id="search-result" hidden>
+              <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+                  <article class="content post">
+                    <h2><a class="summary-title-link"></a></h2>
+                    <div class="post-entry"></div>
+                    <div class="read-more-section">
+                      <h6 class="text-muted link-underline">
+                        <a class="read-more-link">
+                          
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </h6>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </template>
+            
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+<header class="header-section ">
+
+  <div class="intro-header no-img mt-10">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+
+          
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            
+
+            <div class="subfolder-heading">
+              
+
+              
+
+              
+              <h1 class="fw-semibold display-5 lh-1 mb-3"> 
+                ガジェットで五感をHackする
+                
+              </h1>
+              
+              
+
+              
+
+              
+              
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        
+    </div>
+  </div>
+</header>
+
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+
+      <div class="card-image card-image-blog p-0">
+        
+        
+
+
+        
+      </div>
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      <article role="main" class="blog-post">
+        <p>こんにちは。しいたけです。</p>
+<p>情報機器やガジェットは、コンテンツや使い方次第で、私たちに多種多様な体験をもたらします。
+新たな楽しい体験をつくるには、機械から人への情報の伝達、つまり五感への作用が重要な要素になります。
+近年、私は「ガジェットで五感をHackする」というテーマで、様々な機器を集め、
+組み合わせることで新たな体験が創出できないか模索しています。</p>
+<p> </p>
+<p>この記事では、そんな試行錯誤の一端を紹介します。</p>
+<p> 
+ </p>
+<h2 id="空間音響--モーショントラッキング">空間音響 × モーショントラッキング</h2>
+<p><img src="/images/subfolder/five-sense_hacking/Sound_System.png" alt=""></p>
+<p>空間音響は、実空間や仮想空間の聴こえ方を再現でき、従来のステレオやサラウンドなどの再生方式よりも幅広い表現が可能です。私は空間音響とXR機器を組み合わせ、ユーザのモーションに連動してスピーカの挙動を制御するシステムを製作しています。そのシステムによって、新たな表現が可能であると発見しました。今後は、空間音響や、それとモーション操作の組み合わせによって、どのような娯楽を創出できるか模索する予定です。</p>
+<p> </p>
+<h2 id="覗き窓を広げる">”覗き窓”を広げる</h2>
+<p><img src="/images/subfolder/five-sense_hacking/Spacital_Computing.jpg" alt=""></p>
+<p><img src="/images/subfolder/five-sense_hacking/BigMonitor.jpg" alt=""></p>
+<p>情報端末の表示部は、端末の中で行われていることを人間が視るための言わば”覗き窓”のような存在だと思っています。この覗き窓を広げる、つまりより広い表示領域を得ることが、情報端末の利活用にどのような影響を与えるか興味があり、大画面や空間コンピューティングを試しています。</p>
+<p> </p>
+<h2 id="力を錯覚させる">力を錯覚させる</h2>
+<p><img src="/images/subfolder/five-sense_hacking/Actuator.png" alt=""></p>
+<p>ある時、振動アクチュエータに偏った波形の信号を流すことで、あたかも一方向に押されるように感じるという内容の論文を見つけました。それを実際に体験したいと考え、即座に部品と機材を買い揃え、振動アクチュエータによる力覚を体験できるプロトタイプシステムを実装しました。手に振動アクチュエータを持ち、適切な信号を流すと確かに押されるような感覚があり、無意識に手が動きました。振動アクチュエータはただ振動による表現をするだけではなく、人間の挙動に作用できる可能性があります。これをモーション操作のゲームと組み合わせることで、新たな体験を実現できないかと考えています。</p>
+<p> </p>
+<h2 id="香りと音でよりコンテンツに没入できる空気感をつくる">香りと音で、よりコンテンツに没入できる空気感をつくる</h2>
+<p><img src="/images/subfolder/five-sense_hacking/VR_and_smell.jpg" alt=""></p>
+<p>既存のVR機器は、立体視対応の全天球映像により、高い臨場感を得られます。もし、VRに視覚以外の刺激を追加すると没入感はどう変わるのでしょうか。VR機器に空間音響対応の5.2.4chホームシアターシステムを接続し、コンテンツに近いイメージのルームフレグランスを置き、音と香りによって没入感への変化を探ります。</p>
+<p> </p>
+<h2 id="番外編音声信号によってコーヒーの味を変える">番外編：音声信号によってコーヒーの味を変える</h2>
+<p><img src="/images/subfolder/five-sense_hacking/HSCB.jpg" alt=""></p>
+<p>通常は数時間かかる水出しコーヒーの抽出を、超音波の振動を用いて3分以内に短縮する研究があります。それを参考にして、振動アクチュエータを用いたコーヒー抽出システムを実装しました。このシステムによるコーヒーの抽出を試す過程で、振動アクチュエータに流す音声信号によってコーヒーの味が変わることを発見しました。今後は、音声信号とコーヒーの味の関係性を調査する予定です。</p>
+<p> </p>
+<h2 id="おわりに">おわりに</h2>
+<p>ものづくりにおいて、機能性や有用性は大事な要素であり、それをおろそかにはできません。
+しかし、客観的な価値だけでなく、使う人がどのような体験を得られるかという点にも注目したいです。</p>
+
+      </article>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+      <hr class="m-0"/>
+    </div>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
+      
+      <div class="blog-tags">
+        
+        <a href="https://jetJaguar-psx.github.io/tags//"></a>
+        
+      </div>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      
+      <section id="social-share">
+        <div class="list-inline footer-links">
+          
+
+<div>
+  <p>Use the share button below if you liked it.</p>
+</div>
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+    <li>
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjetJaguar-psx.github.io%2fsubfolder%2ffive-sense_hacking%2f" target="_blank" title="Share on Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </svg>
+      </a>
+    </li>
+    
+    <li>
+      <a href="//twitter.com/share?url=https%3a%2f%2fjetJaguar-psx.github.io%2fsubfolder%2ffive-sense_hacking%2f&amp;text=%e3%82%ac%e3%82%b8%e3%82%a7%e3%83%83%e3%83%88%e3%81%a7%e4%ba%94%e6%84%9f%e3%82%92Hack%e3%81%99%e3%82%8b&amp;via=map%5bname%3aShiitake%5d"
+        target="_blank" title="Share on Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-twitter-x" viewBox="0 0 16 16">
+          <path
+            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+        </svg>
+      </a>
+    </li>
+
+
+    
+    <li>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjetJaguar-psx.github.io%2fsubfolder%2ffive-sense_hacking%2f&amp;title=%e3%82%ac%e3%82%b8%e3%82%a7%e3%83%83%e3%83%88%e3%81%a7%e4%ba%94%e6%84%9f%e3%82%92Hack%e3%81%99%e3%82%8b"
+        target="_blank" title="Share on LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+        </svg>
+      </a>
+    </li>
+
+    <li>
+      <a target="_blank" rel="noopener noreferrer" aria-label="share ガジェットで五感をHackする on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fjetJaguar-psx.github.io%2fsubfolder%2ffive-sense_hacking%2f&title=%e3%82%ac%e3%82%b8%e3%82%a7%e3%83%83%e3%83%88%e3%81%a7%e4%ba%94%e6%84%9f%e3%82%92Hack%e3%81%99%e3%82%8b">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-reddit"
+          viewBox="0 0 16 16">
+          <path
+            d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z" />
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z" />
+        </svg>
+      </a>
+    </li>
+
+    
+    
+
+
+    
+    <li>
+      <a href="whatsapp://send?text=https%3a%2f%2fjetJaguar-psx.github.io%2fsubfolder%2ffive-sense_hacking%2f&amp;description=%e3%82%ac%e3%82%b8%e3%82%a7%e3%83%83%e3%83%88%e3%81%a7%e4%ba%94%e6%84%9f%e3%82%92Hack%e3%81%99%e3%82%8b" target="_blank" rel="noopener"
+        title="Share on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-whatsapp" viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<p class="text-muted">It makes me smile, when I see it.</p>
+        </div>
+      </section>
+      
+    </div>
+
+    
+
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-1 pt-4">
+      
+      <ul class="list-group list-group-horizontal" style="flex-direction: row">
+        
+        <li class="list-group-item b-0 p-0">
+
+          <a type="button" class="btn btn-dark" role="button" href="https://jetJaguar-psx.github.io/subfolder/mini_game/"
+            data-toggle="tooltip" data-placement="top" title="製作に関わったミニゲーム">&larr;
+            </a>
+        </li>
+        
+
+
+        
+      </ul>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+    </div>
+  </div>
+  
+</div>
+
+<div class="">
+  
+  
+  
+  
+  
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 mt-3">
+        <h3></h3>
+        <hr />
+      </div>
+
+      
+      
+
+      
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://jetJaguar-psx.github.io/subfolder/mini_game/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">製作に関わったミニゲーム</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  101012 February 10
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    こんにちは。しいたけです。
+この記事では、私が製作に関わったミニゲームを紹介します。
+Unityを用いたゲーム製作 Grapple Rush ワイヤーアクションで宙を舞うスナイパー 空中をハイスピードで駆けながら、相手を狙撃する対戦シューティングゲームです。最大8人のオンライン対戦に対応。 サークル内のハッカソンにて製作し、3名で3週間かけて開発しました。
+担当箇所：ゲーム原案、バランス調整
+ガチャパンジャン ガチャを回して、パンジャンドラムを回して、世界をかき回す ランダムで排出される車輪から2つ選んでパンジャンドラムを作り、それを転がして建物などを薙ぎ払った数を競うゲーム。 Unity 1week ゲームジャムに向けて、学生2名社会人2名で製作しました。その時のテーマ「回」から連想した「ガチャ」と「パンジャンドラム」を組み合わせました。
+担当箇所：パンジャンドラムのモーション
+その他 振るフラッピーバード キャラクターの高度を調整して、進路を阻む障害物を避けるミニゲームをArduino Unoで再現。 子供向けの縁日のようなイベントに出展するために製作したため、子供が好きな動きの代表例として「振る」を操作に採用しました。 イベント当日は大盛況で繰り返し遊ぶ子供が後を絶たず、想定以上に激しく振り回された装置が分解してしまう場面も&hellip;。
+風で速さを感じるVRレースゲーム レースゲームにおける車両の速さに連動して、スマートリモコンを介して扇風機を制御するシステムを実装しました。
+Vic Field カードゲームと将棋のようなボードゲームを組み合わせた、対戦型戦略シミュレーションです。
+1対1で、相手の拠点を破壊したら勝ち。兵士を配置して進軍しつつ、防壁や地雷を配置し敵の進路を阻む、攻防の匙加減がカギを握ります。
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline"> <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+      
+
+      
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://jetJaguar-psx.github.io/post/keyboard_market_2025_preview/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">キーボードマーケット 2025 予告</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  313110 December 31
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    パッと（P）一緒に（i）ものづくり！（m） みなさんこんにちは。島根大学ものづくり部Pimです！ 2025/3/22(土)に開催予定のキーボードマーケットのスペースE-7にて、「島根大学ものづくり部Pim」として出展します！
+この記事は、頒布や展示する物品の案をチラ見せする予告編です！
+頒布物の草案 ※記事執筆時点では未確定です。確定情報をお待ちください。
+ErgoGridGo2 学生が授業などで持ち歩くという想定の、コンパクトな自作キーボードキットです。 指の長さに合わせたカラムスタッガード配列と、左右どちらの手からもアクセスしやすい中央に配置されたテンキーが特徴です。数字行を減らしてコンパクトにしたため、持ち歩きに最適です。 Kailhロープロファイルキースイッチに加え、Cherry MX互換キースイッチにも対応しています。
+特徴 RemapやVialなどのキーマップ変更ツールに対応 Kailhロープロファイルキースイッチ（Choc v1キースイッチ、Choc v2キースイッチ）に対応 Cherry MX互換キースイッチにも対応 スイッチプレートが無いなど低価格化を徹底 プレートのカラーは白と黒の2色展開 マイコンボードを覆うプレートはロゴありとロゴなしの2種類を同梱 BLE micro proと単4電池ボックスを用いた無線化に対応 【鋭意設計中】Reversibel Tastatur ※写真は設計作業の様子
+こちらはものづくり部Pimの新入生が設計に初挑戦しているキットです。 左右分割キーボードを見せると、「左側だけ欲しい」と言われることの、何と多いことか&hellip;。 そんな声に答えた、片手用のマクロパッドです。リバーシブルな基板なので、右手用か左手用か選んで作ることができます。 2台組み合わせると左右分割キーボードとして使用できます。
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline"> <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+      
+
+      
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://jetJaguar-psx.github.io/post/userguide_ergogridgo2/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">ErgoGridGoシリーズ ユーザガイド</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  90910 March 9
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    自作キーボードキット「ErgoGridGo」と「ErgoGridGo2」のユーザガイドです。
+このガイドは以下のキーボードを対象としています。
+ErgoGridGo v1.0 （非売品） ErgoGridGo v1.1（島根大学大学祭などで頒布） ErgoGridGo2 v1.0（キーケットなどで頒布） ErgoGridGo2 v1.1（キーケットなどで頒布） 目次 ファームウェアのアップデート キーマップの変更 使用上の注意 よくあるトラブル ファームウェアのアップデートファームウェアの変更があった際はTwitterアカウント @Jetjaguar_ZLにて告知します。
+ファームウェアを書き込む前に ファームウェアを書き込むと、キーマップは初期設定に戻ってしまいます。既にキーマップを設定済みの場合は、必ず控えを取ってください。
+ファームウェアの配布場所 キーマップ変更に用いるWebサイト「Remap」にて配布しています。お手持ちのキーボードに対応するリンクを選択してください。
+ErgoGridGo ファームウェア配布ページ
+ErgoGridGo2 ファームウェア配布ページ
+Pro micro へのファームウェアの書き込み ファームウェア配布ページで、書き込みたいファームウェアの「FLASH」をクリックしてください。するとこのようなポップアップが表示されます。
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline"> <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+      
+    </div>
+  </div>
+  
+  
+
+  
+
+</div>
+
+    
+
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul
+          class="list-inline list-group list-group-horizontal text-center footer-links d-flex justify-content-center flex-row">
+
+          
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="credits copyright text-muted">
+          
+          
+          Shiitake
+          
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+          2025
+          
+
+          
+          &nbsp;&bull;&nbsp;
+          <a href="https://jetJaguar-psx.github.io/">しいたけの部屋</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://jetJaguar-psx.github.io/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://jetJaguar-psx.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function () { $("pre.chroma").css("padding", "0"); }); </script>
+
+    
+  </body>
+</html>
+
