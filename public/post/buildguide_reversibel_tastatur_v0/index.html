@@ -8,11 +8,11 @@
 
 
 <title>ErgoGridGo2 ビルドガイド - しいたけの部屋</title>
-<meta name="description" content="自作キーボードキット「ErgoGridGo2」のビルドガイドです。
-目次 はじめに キット内容物一覧 キット以外で必要なもの 必要な工具 組み立て ファームウェアの書き込み 終わりに ご連絡先 はじめにキットをご購入いただいた方、お買い上げありがとうございます。 学外でのキット頒布は初めてなので、至らぬ点があると思います。 不備やわからないことがあれば遠慮なくお問い合わせください。
+<meta name="description" content="2025/3/22(土)のキーボードマーケットにて頒布した自作キーボード基板「Reversibel Tastatur」のビルドガイドです。
+目次 はじめに セット内容物一覧 セット以外で必要なもの スイッチプレートの用意 必要な工具 組み立て ファームウェアの書き込み 終わりに ご連絡先 はじめにキットをご購入いただいた方、お買い上げありがとうございます。 不備やわからないことがあれば遠慮なくお問い合わせください。
 注意事項 本キットはご購入者様がご自分で組み立てるキットです。 極めて簡単に組み立てられるように設計しておりますが、必ず組み立てる前にこのビルドガイドをご確認ください。 疑問点があれば、必ず組み立てる前に設計者まで問い合わせてください。取り返しのつかないミスをする前に確認することが大事です。
-キット内容物一覧内容物に不足や不良があれば、設計者までご連絡ください。
-品目 必要数 内容量 PCB 1枚 1枚 ボトムプレート 1枚 1枚 トッププレート（ロゴあり） 1枚 1枚 トッププレート（ロゴ無し） 1枚 1枚 Pro Micro 1個 1個 コンスルー 2個 2個 ダイオード 54本 60本 ネジ 32個 32本 4mmスペーサー 12個 14個 7mmスペーサー 3個 4個 リセットスイッチ 1個 1個 TRRSジャック 1個 1個 ゴム足 任意 6個 v1.">
+セット内容物一覧内容物に不足や不良があれば、設計者までご連絡ください。
+品目 必要数 内容量 PCB 1枚 1枚 ボトムプレート 1枚 1枚 トッププレート 1枚 1枚 セット以外で必要なもの品目 必要数 キースイッチ 22個 1Uキーキャップ 21個 1.">
 
 <meta name="author" content="Shiitake"><script type="application/ld+json">
 {
@@ -49,7 +49,7 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/jetJaguar-psx.github.io\/post\/buildguide_ergogridgo2\/",
+          "@id": "https:\/\/jetJaguar-psx.github.io\/post\/buildguide_reversibel_tastatur_v0\/",
           "name": "Ergo grid go2 ビルドガイド"
         }
     }]
@@ -62,14 +62,14 @@
     "name" : "Shiitake"
   },
   "headline": "ErgoGridGo2 ビルドガイド",
-  "description" : "自作キーボードキット「ErgoGridGo2」のビルドガイドです。\n目次 はじめに キット内容物一覧 キット以外で必要なもの 必要な工具 組み立て ファームウェアの書き込み 終わりに ご連絡先 はじめに\rキットをご購入いただいた方、お買い上げありがとうございます。 学外でのキット頒布は初めてなので、至らぬ点があると思います。 不備やわからないことがあれば遠慮なくお問い合わせください。\n注意事項 本キットはご購入者様がご自分で組み立てるキットです。 極めて簡単に組み立てられるように設計しておりますが、必ず組み立てる前にこのビルドガイドをご確認ください。 疑問点があれば、必ず組み立てる前に設計者まで問い合わせてください。取り返しのつかないミスをする前に確認することが大事です。\nキット内容物一覧\r内容物に不足や不良があれば、設計者までご連絡ください。\n品目 必要数 内容量 PCB 1枚 1枚 ボトムプレート 1枚 1枚 トッププレート（ロゴあり） 1枚 1枚 トッププレート（ロゴ無し） 1枚 1枚 Pro Micro 1個 1個 コンスルー 2個 2個 ダイオード 54本 60本 ネジ 32個 32本 4mmスペーサー 12個 14個 7mmスペーサー 3個 4個 リセットスイッチ 1個 1個 TRRSジャック 1個 1個 ゴム足 任意 6個 v1.",
+  "description" : "2025\/3\/22(土)のキーボードマーケットにて頒布した自作キーボード基板「Reversibel Tastatur」のビルドガイドです。\n目次 はじめに セット内容物一覧 セット以外で必要なもの スイッチプレートの用意 必要な工具 組み立て ファームウェアの書き込み 終わりに ご連絡先 はじめに\rキットをご購入いただいた方、お買い上げありがとうございます。 不備やわからないことがあれば遠慮なくお問い合わせください。\n注意事項 本キットはご購入者様がご自分で組み立てるキットです。 極めて簡単に組み立てられるように設計しておりますが、必ず組み立てる前にこのビルドガイドをご確認ください。 疑問点があれば、必ず組み立てる前に設計者まで問い合わせてください。取り返しのつかないミスをする前に確認することが大事です。\nセット内容物一覧\r内容物に不足や不良があれば、設計者までご連絡ください。\n品目 必要数 内容量 PCB 1枚 1枚 ボトムプレート 1枚 1枚 トッププレート 1枚 1枚 セット以外で必要なもの\r品目 必要数 キースイッチ 22個 1Uキーキャップ 21個 1.",
   "inLanguage" : "jp",
-  "wordCount":  216 ,
+  "wordCount":  149 ,
   "datePublished" : "2024-03-06T00:25:45",
   "dateModified" : "2024-03-06T00:25:45",
   "image" : "https:\/\/jetJaguar-psx.github.io\/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https:\/\/jetJaguar-psx.github.io\/post\/buildguide_ergogridgo2\/",
+  "mainEntityOfPage" : "https:\/\/jetJaguar-psx.github.io\/post\/buildguide_reversibel_tastatur_v0\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/jetJaguar-psx.github.io\/",
@@ -83,7 +83,7 @@
 }
 </script>
 
-<meta property="og:url" content="https://jetJaguar-psx.github.io/post/buildguide_ergogridgo2/">
+<meta property="og:url" content="https://jetJaguar-psx.github.io/post/buildguide_reversibel_tastatur_v0/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="しいたけの部屋">
 
@@ -294,13 +294,14 @@
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        <p>自作キーボードキット「ErgoGridGo2」のビルドガイドです。</p>
+        <p>2025/3/22(土)のキーボードマーケットにて頒布した自作キーボード基板「Reversibel Tastatur」のビルドガイドです。</p>
 <p> </p>
 <h2 id="目次">目次</h2>
 <ul>
 <li><a href="#section1">はじめに</a></li>
-<li><a href="#section2">キット内容物一覧</a></li>
-<li><a href="#section3">キット以外で必要なもの</a></li>
+<li><a href="#section2">セット内容物一覧</a></li>
+<li><a href="#section3">セット以外で必要なもの</a></li>
+<li><a href="#section4">スイッチプレートの用意</a></li>
 <li><a href="#section5">必要な工具</a></li>
 <li><a href="#section6">組み立て</a></li>
 <li><a href="#section7">ファームウェアの書き込み</a></li>
@@ -310,14 +311,13 @@
 <p> </p>
 <h2><a id="section1">はじめに</a></h2>
 <p>キットをご購入いただいた方、お買い上げありがとうございます。
-学外でのキット頒布は初めてなので、至らぬ点があると思います。
 不備やわからないことがあれば遠慮なくお問い合わせください。</p>
 <p> </p>
 <h3 id="注意事項">注意事項</h3>
 <p>本キットはご購入者様がご自分で組み立てるキットです。
 極めて簡単に組み立てられるように設計しておりますが、必ず組み立てる前にこのビルドガイドをご確認ください。 疑問点があれば、必ず組み立てる前に設計者まで問い合わせてください。取り返しのつかないミスをする前に確認することが大事です。</p>
 <p> </p>
-<h2><a id="section2">キット内容物一覧</a></h2>
+<h2><a id="section2">セット内容物一覧</a></h2>
 <p>内容物に不足や不良があれば、設計者までご連絡ください。</p>
 <table>
 <thead>
@@ -339,65 +339,14 @@
 <td>1枚</td>
 </tr>
 <tr>
-<td>トッププレート（ロゴあり）</td>
+<td>トッププレート</td>
 <td>1枚</td>
 <td>1枚</td>
-</tr>
-<tr>
-<td>トッププレート（ロゴ無し）</td>
-<td>1枚</td>
-<td>1枚</td>
-</tr>
-<tr>
-<td>Pro Micro</td>
-<td>1個</td>
-<td>1個</td>
-</tr>
-<tr>
-<td>コンスルー</td>
-<td>2個</td>
-<td>2個</td>
-</tr>
-<tr>
-<td>ダイオード</td>
-<td>54本</td>
-<td>60本</td>
-</tr>
-<tr>
-<td>ネジ</td>
-<td>32個</td>
-<td>32本</td>
-</tr>
-<tr>
-<td>4mmスペーサー</td>
-<td>12個</td>
-<td>14個</td>
-</tr>
-<tr>
-<td>7mmスペーサー</td>
-<td>3個</td>
-<td>4個</td>
-</tr>
-<tr>
-<td>リセットスイッチ</td>
-<td>1個</td>
-<td>1個</td>
-</tr>
-<tr>
-<td>TRRSジャック</td>
-<td>1個</td>
-<td>1個</td>
-</tr>
-<tr>
-<td>ゴム足</td>
-<td>任意</td>
-<td>6個</td>
 </tr>
 </tbody>
 </table>
-<p>v1.0 基板のみをご購入の方は、<a href="https://jetjaguar-psx.github.io/post/parts_list_ergogridgo2/">パーツリスト</a>をご確認ください。</p>
 <p> </p>
-<h2><a id="section3">キット以外で必要なもの</a></h2>
+<h2><a id="section3">セット以外で必要なもの</a></h2>
 <table>
 <thead>
 <tr>
@@ -408,15 +357,51 @@
 <tbody>
 <tr>
 <td>キースイッチ</td>
-<td>54個</td>
+<td>22個</td>
 </tr>
 <tr>
 <td>1Uキーキャップ</td>
-<td>54個</td>
+<td>21個</td>
 </tr>
 <tr>
-<td>USBケーブル（マイコンボードとPCを接続するもの）</td>
-<td>1本</td>
+<td>1.5Uキーキャップ</td>
+<td>1個</td>
+</tr>
+<tr>
+<td>Pro Micro</td>
+<td>1個</td>
+</tr>
+<tr>
+<td>コンスルー</td>
+<td>2本</td>
+</tr>
+<tr>
+<td>ダイオード</td>
+<td>22本</td>
+</tr>
+<tr>
+<td>M2ネジ</td>
+<td>20個</td>
+</tr>
+<tr>
+<td>5mmスペーサー</td>
+<td>7個</td>
+</tr>
+<tr>
+<td>6mmまたは7mmのスペーサー</td>
+<td>3個</td>
+</tr>
+<tr>
+<td>リセットスイッチ</td>
+<td>1個</td>
+</tr>
+<tr>
+<td>TRRSジャック</td>
+<td>1個</td>
+</tr>
+<tr>
+<td>ゴム足</td>
+<td>任意</td>
 </tr>
 </tbody>
 </table>
@@ -426,40 +411,18 @@
 <ul>
 <li>Kailh Choc v1</li>
 <li>Kailh Choc v2</li>
-<li>Cherry MX 互換</li>
 </ul>
-<h3 id="キーキャップ">キーキャップ</h3>
-<p>ErgoGridGoはすべてのキーが一番小さい単位の1uというサイズのキーで構成されるため、一般的なキーキャップセットでは印字を一致させることは出来ません。キーキャップセットで足りないところを無刻印のキーキャップで補うと良いかもしれません。</p>
-<p>※Kailh Choc v2スイッチはMXキーキャップを取付できますが、一部のキーキャップと干渉し上手くはまらない可能性があります。</p>
 <p> </p>
-<h3 id="オプション無線化に必要なパーツ">(オプション)無線化に必要なパーツ</h3>
-<p>商品ページへの外部リンクがあります。品目をクリックすると商品ページへ移動します。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">品目</th>
-<th style="text-align:center">必要量</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><a href="https://shop.yushakobo.jp/products/ble-micro-pro">BLE micro pro</a></td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://akizukidenshi.com/catalog/g/g102670/">単4電池ボックス</a></td>
-<td style="text-align:center">2</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://shop.yushakobo.jp/products/5624">スライドスイッチ</a></td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://www.hirosugi-net.co.jp/shop/g/g642/">M3 6mmスペーサー</a></td>
-<td style="text-align:center">3</td>
-</tr>
-</tbody>
-</table>
+<h2><a id="section4">スイッチプレートの用意</a></h2>
+<h3 id="キーケット2025で購入された方へ">キーケット2025で購入された方へ</h3>
+<p>キーケット2025で頒布したバージョンでは、スイッチプレートの設計ミスがあります。
+Boothにて修正したスイッチプレートを頒布しています。
+また、dxfファイルも配布しておりますので、ご自身でスイッチプレートをお作りいただくことも可能です。</p>
+<p><a href="https://motopim-keebs.booth.pm/items/6721311">https://motopim-keebs.booth.pm/items/6721311</a></p>
+<p> </p>
+<h3 id="キーケット以外でご購入された方へ">キーケット以外でご購入された方へ</h3>
+<p>キーケット2025以降のイベントで頒布したものには、正しいスイッチプレートを同梱しております。
+そのままお使いください。</p>
 <p> </p>
 <h2><a id="section5">必要な工具</a></h2>
 <h3 id="必須">必須</h3>
@@ -467,12 +430,6 @@
 <li>はんだごて</li>
 <li>精密ドライバー</li>
 <li>ペンチ</li>
-</ul>
-<h3 id="無線化する場合は必須">無線化する場合は必須</h3>
-<ul>
-<li>ラジオペンチ</li>
-<li>硬い針金を切断可能な工具</li>
-<li>マスキングテープ</li>
 </ul>
 <h3 id="あると便利">あると便利</h3>
 <ul>
@@ -485,104 +442,75 @@
 <h2><a id="section6">組み立て</a></h2>
 <p>本キットには部品の取付順序があります。間違えると大変苦労しますので、十分ご注意ください。</p>
 <p> </p>
+<p><strong>本キットの基板は左右リバーシブルです。組み立てる際に表裏をよくご確認ください。</strong></p>
+<p> </p>
 <h3 id="はんだ付け-trrsジャック">はんだ付け① TRRSジャック</h3>
-<p><img src="/images/EGG2_TRRS.jpg" alt=""></p>
-<p>まず最初にTRRSジャックを取り付けます。キースイッチ取り付け後にTRRSジャックを取り付けるのは難しいので、必ず最初に取り付けてください。TRRSジャックがずれたり浮いたりすると、ボトムプレートと干渉しますので、しっかりと差し込んでください。</p>
+<!-- ![](/images/EGG2_TRRS.jpg) -->
+<p>PCB表面にTRRSジャックを取り付けます。裏表を間違えると他の部品と干渉しますので、よくご確認ください。表面から差し込んだ後、裏面からはんだ付けします。</p>
 <p> </p>
 <h3 id="はんだ付け-タクトスイッチ">はんだ付け② タクトスイッチ</h3>
 <p><img src="/images/EGG2_Reset.jpg" alt=""></p>
-<p>PCBの裏側上部、[RESET]と書かれた所にリセット用タクトスイッチを取り付けます。裏表を間違えると他の部品と干渉しますので、よくご確認ください。裏から差し込んだ後、表面からはんだ付けします。</p>
+<p>PCBの表面、[RESET]と書かれた所にリセット用タクトスイッチを取り付けます。裏表を間違えると他の部品と干渉しますので、よくご確認ください。表面から差し込んだ後、裏面からはんだ付けします。</p>
 <p> </p>
 <h3 id="基板にコンスルーを差し込む">基板にコンスルーを差し込む</h3>
 <p>この段階では差し込むだけです。まだはんだ付けはしないでください。</p>
 <h4 id="コンスルーの向き">コンスルーの向き</h4>
 <p><img src="/images/EGG1_SPH.jpg" alt="">
 コンスルーには向きがあります。コンスルーは片方の側面に金色の部材が見える窓があります。この窓は若干片方のピンに寄っています。窓から遠い側のピンをPCBに、近い側のピンをマイコンボードに差します。この時、2つのコンスルーの窓がある面が必ず同じ方向に向くように差さないと、正常に導通せず動作不良を引き起こします。ご注意ください。</p>
-<h4 id="オプションble-micro-proを使用する場合">（オプション）BLE micro proを使用する場合</h4>
-<p><img src="/images/EGG2_SPH_bmp.jpg" alt="">
-BLE micro proを用いる場合は、画像のように左上の黒く縁どられたピンにかかるようにコンスルーを差してください。</p>
-<p>PCBにコンスルーピンを差したら、そこにBLE micro proを取り付けます。本キットでは、BLE micro proの部品実装面を上にして取り付けます。</p>
-<h4 id="pro-microを使用する場合">Pro microを使用する場合</h4>
-<p><img src="/images/EGG2_SPH_pm.jpg" alt="">
-キット同梱のPro microを用いる場合は、画像のように左上のピン1つを避けるようにコンスルーを差してください。</p>
-<p><img src="/images/EGG2_pm.jpg" alt="">
-PCBにコンスルーピンを差したら、そこにPro microを取り付けます。本キットでは、Pro microの部品実装面を上にして取り付けます。</p>
 <p> </p>
 <h3 id="はんだ付け-pro-microとコンスルー">はんだ付け③ Pro microとコンスルー</h3>
 <p><strong>はんだ付けするのはコンスルーとPro microだけです。コンスルーとPCBは着脱できるように、PCB側はんだ付けしないでください。</strong></p>
-<p>※ BLE micro proの場合は、PCB側もマイコン側もはんだ付け不要です。</p>
 <p> </p>
 <h3 id="はんだ付け-ダイオード">はんだ付け④ ダイオード</h3>
 <h4 id="ダイオードの足を曲げる">ダイオードの足を曲げる</h4>
 <p><img src="/images/EGG2_Diode.jpg" alt="">
 ダイオードの足を差込口の幅に合わせて曲げます。ダイオードベンダーがあると効率的に曲げられるのでおすすめです。</p>
 <h4 id="ダイオードの向きを揃えて挿入する">ダイオードの向きを揃えて挿入する</h4>
-<p><img src="/images/EGG2_Diode2.jpg" alt="">
-PCBの裏面からダイオードを差し込みます。
-<img src="/images/Diode.png" alt="">
-ダイオードには向きがあり、間違えると隣接するキーが動作しなくなるなどの不具合を生じます。向きは上図の通りです。</p>
-<p><img src="/images/EGG2_Diode3.jpg" alt="">
-PCB表面にて、ダイオードの足を広げておくと抜けにくくなり、安定してはんだ付けできます。</p>
+<!-- ![](/images/EGG2_Diode2.jpg) -->
+<p>PCBの裏面からダイオードを差し込みます。</p>
+<!-- ![](/images/Diode.png) -->
+<p>ダイオードには向きがあり、間違えると隣接するキーが動作しなくなるなどの不具合を生じます。向きは上図の通りです。</p>
+<!-- ![](/images/EGG2_Diode3.jpg) -->
+<p>PCB表面にて、ダイオードの足を広げておくと抜けにくくなり、安定してはんだ付けできます。</p>
 <h4 id="ダイオードのはんだ付け">ダイオードのはんだ付け</h4>
-<p><img src="/images/EGG2_Diode4.jpg" alt="">
-PCB裏面からはんだ付けすると、汚れが表面に付かないため仕上がりが綺麗になります。</p>
+<p><img src="/images/EGG2_Diode4.jpg" alt=""></p>
 <h4 id="ダイオードの足を切る">ダイオードの足を切る</h4>
 <p>PCB表面にはみ出たダイオードの足を、ペンチなどで切り落としましょう。この時、PCBの配線を傷つけないよう慎重に行ってください。</p>
 <p> </p>
-<h3 id="はんだ付け-キースイッチ">はんだ付け⑤ キースイッチ</h3>
-<p>PCB表面からキースイッチを差し、裏面に出たピンをはんだ付けします。</p>
-<p>本キットは低価格化のために、キースイッチを固定するスイッチプレートが無い仕様となっております。そのため、キースイッチがずれたり浮いたりします。はんだ付けする前にマスキングテープ等でキースイッチを止めるのも良いかもしれません。</p>
-<p><img src="/images/EGG2_4.jpg" alt="">
-まずは四隅のキーをはんだ付けすると、その後の取り付けが安定して行えます。</p>
-<p><img src="/images/EGG2_soldering_completed.jpg" alt="">
-54キー全てはんだ付けしましょう。これにてはんだ付けは終了です（無線化の工程を除く）。</p>
+<h3 id="はんだ付け-四隅のキースイッチ">はんだ付け⑤ 四隅のキースイッチ</h3>
+<!-- 画像 -->
+<p>スイッチプレートの四隅の穴にキースイッチをはめて、それらのキースイッチをPCBに付けてください。最初に四隅から付けることで、スイッチプレートのずれを防ぎます。</p>
+<h3 id="はんだ付け-残りのキースイッチ">はんだ付け⑥ 残りのキースイッチ</h3>
+<p>残り18キーをスイッチプレート、PCBに差し、全てはんだ付けしましょう。これにてはんだ付けは終了です。</p>
 <p> </p>
 <h3 id="ネジ止め-7mmスペーサー">ネジ止め① 7mmスペーサー</h3>
-<p><img src="/images/EGG1_SPH.jpg" alt="">
-PCB表面の、マイコンボード周囲3ヶ所に長い方のスペーサーをネジ止めしてください。</p>
-<p>BLE micro proを使用する場合は、6mmスペーサー（キットには同梱しておりません）を使用することを推奨します。</p>
+<!-- ![](/images/EGG1_SPH.jpg) -->
+<p>PCB表面の、マイコンボード周囲3ヶ所に長い方のスペーサーをネジ止めしてください。</p>
+<p>左手用に組む場合は6mm、右手用に組む場合は7mmのスペーサーを使用することを推奨します。</p>
 <p> </p>
 <h3 id="ネジ止め-トッププレート">ネジ止め② トッププレート</h3>
-<p>先ほど取り付けたスペーサーに、トッププレートをネジ止めしてください。トッププレートはロゴありとロゴなしの2種類ありますが、機能に差はありませんので、お好きな方をお選びください。</p>
+<p>先ほど取り付けたスペーサーに、トッププレートをネジ止めしてください。トッププレートはロゴがある面と無い面がありますが、どちらを上にしても取り付け可能ですので、お好きな面をお選びください。</p>
 <p> </p>
 <h3 id="ネジ止め-4mmスペーサー">ネジ止め③ 4mmスペーサー</h3>
-<h4 id="ミドルプレートが無い場合">ミドルプレートが無い場合</h4>
-<p><img src="/images/EGG2_bottom.jpg" alt="">
-ボトムプレートの各ネジ穴に、4mmスペーサーをネジ止めしてください。ボトムプレートの表裏をお間違えの無いようよく確認してください。</p>
-<h4 id="ミドルプレート未発売がある場合">ミドルプレート（未発売）がある場合</h4>
-<p><img src="/images/middle.jpg" alt="">
-まず、ミドルプレートの六角形の穴に4mmスペーサーをはめてください。次に、4mmスペーサーとボトムプレートをネジ止めしてください。</p>
+<!-- ![](/images/EGG2_bottom.jpg) -->
+<p>ボトムプレートの各ネジ穴に、4mmスペーサーをネジ止めしてください。ボトムプレートの表裏をお間違えの無いようよく確認してください。</p>
 <p> </p>
 <h3 id="ネジ止め-最終工程">ネジ止め④ 最終工程</h3>
 <p>ボトムプレートに取り付けた4mmスペーサーを、PCBにネジ止めします。</p>
-<p> </p>
-<h3 id="オプションはんだ付け-無線化に必要なパーツ">（オプション）はんだ付け⑥ 無線化に必要なパーツ</h3>
-<h4 id="電源スライドスイッチ">電源スライドスイッチ</h4>
-<p><img src="/images/EGG_slide.jpg" alt="">
-PCB裏面からスライドスイッチを差し込みます。スライドスイッチのつまみが外側を向くように差してください。</p>
-<p><img src="/images/EGG_slide_tape.jpg" alt="">
-PCBから少しでもスライドスイッチが浮くと、ボトムプレートと干渉してしまうギリギリの設計となっております。浮かないようにマスキングテープなどで押さえましょう。</p>
-<p>PCB表面からはんだ付けします。</p>
-<p> </p>
-<h4 id="電池ボックス">電池ボックス</h4>
-<p><img src="/images/EGG2_battery_pin.jpg" alt="">
-電池ボックスのピンを画像の向きにラジオペンチで曲げます。ピンが硬いので、ラジオペンチが無いと難しいです。電池ボックスのピンはねじる方向の力に弱く、ねじると根本から折れてしまいます。力のかけ方には気を付けましょう。</p>
-<p><img src="/images/EGG2_battery_attached.jpg" alt="">
-電池ボックスのピンをPCB表面から差し込み、裏面ではんだ付けします。PCBから電池ボックスが浮くと見た目が良くないので、マスキングテープなどで仮止めすると良いかもしれません。</p>
-<p>はみ出したピンはペンチで切断しましょう。</p>
 <p> </p>
 <h3 id="キーキャップの取り付け">キーキャップの取り付け</h3>
 <p>キーマップに応じた配列で、キーキャップを取り付けます。軸を折らないようにお気を付けください。</p>
 <p>これにて組み立て完了です。お疲れ様でした！</p>
 <p> </p>
 <h2><a id="section7">ファームウェアの書き込み</a></h2>
-<p>本キットではファームウェアをマイコンボードに書き込む必要があります。ファームウェアの書き込みやキーマップの設定については<a href="https://jetjaguar-psx.github.io/post/userguide_ergogridgo2/">ErgoGridGo2 ユーザガイド</a>をご覧ください。</p>
+<p><strong>ファームウェアは準備中です。近日公開予定です。</strong></p>
 <p> </p>
 <h2><a id="section8">終わりに</a></h2>
-<p>完成したErgoGridGo2の写真をSNS等に投稿していただけると嬉しいです。ハッシュタグは #ErgoGridGo2 でお願いします。</p>
+<p>完成したReversibel Tastaturの写真をSNS等に投稿していただけると嬉しいです。ハッシュタグは #Reversibel_Tastatur でお願いします。</p>
 <p> </p>
 <h2><a id="section9">ご連絡先</a></h2>
-<p>不備やご質問等ございましたらキットの外袋に記載の連絡先までご連絡ください。</p>
+不備やご質問等ございましたら下記の連絡先までご連絡ください。
+https://x.com/JetJaguar_ZL
 
       </article>
     </div>
@@ -616,7 +544,7 @@ PCBから少しでもスライドスイッチが浮くと、ボトムプレー�
   <ul class="share">
     
     <li>
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjetJaguar-psx.github.io%2fpost%2fbuildguide_ergogridgo2%2f" target="_blank" title="Share on Facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjetJaguar-psx.github.io%2fpost%2fbuildguide_reversibel_tastatur_v0%2f" target="_blank" title="Share on Facebook">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-facebook" viewBox="0 0 16 16">
           <path
             d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
@@ -625,7 +553,7 @@ PCBから少しでもスライドスイッチが浮くと、ボトムプレー�
     </li>
     
     <li>
-      <a href="//twitter.com/share?url=https%3a%2f%2fjetJaguar-psx.github.io%2fpost%2fbuildguide_ergogridgo2%2f&amp;text=ErgoGridGo2%20%e3%83%93%e3%83%ab%e3%83%89%e3%82%ac%e3%82%a4%e3%83%89&amp;via=map%5bname%3aShiitake%5d"
+      <a href="//twitter.com/share?url=https%3a%2f%2fjetJaguar-psx.github.io%2fpost%2fbuildguide_reversibel_tastatur_v0%2f&amp;text=ErgoGridGo2%20%e3%83%93%e3%83%ab%e3%83%89%e3%82%ac%e3%82%a4%e3%83%89&amp;via=map%5bname%3aShiitake%5d"
         target="_blank" title="Share on Twitter">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-twitter-x" viewBox="0 0 16 16">
           <path
@@ -637,7 +565,7 @@ PCBから少しでもスライドスイッチが浮くと、ボトムプレー�
 
     
     <li>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjetJaguar-psx.github.io%2fpost%2fbuildguide_ergogridgo2%2f&amp;title=ErgoGridGo2%20%e3%83%93%e3%83%ab%e3%83%89%e3%82%ac%e3%82%a4%e3%83%89"
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjetJaguar-psx.github.io%2fpost%2fbuildguide_reversibel_tastatur_v0%2f&amp;title=ErgoGridGo2%20%e3%83%93%e3%83%ab%e3%83%89%e3%82%ac%e3%82%a4%e3%83%89"
         target="_blank" title="Share on LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16">
           <path
@@ -648,7 +576,7 @@ PCBから少しでもスライドスイッチが浮くと、ボトムプレー�
 
     <li>
       <a target="_blank" rel="noopener noreferrer" aria-label="share ErgoGridGo2 ビルドガイド on reddit"
-        href="https://reddit.com/submit?url=https%3a%2f%2fjetJaguar-psx.github.io%2fpost%2fbuildguide_ergogridgo2%2f&title=ErgoGridGo2%20%e3%83%93%e3%83%ab%e3%83%89%e3%82%ac%e3%82%a4%e3%83%89">
+        href="https://reddit.com/submit?url=https%3a%2f%2fjetJaguar-psx.github.io%2fpost%2fbuildguide_reversibel_tastatur_v0%2f&title=ErgoGridGo2%20%e3%83%93%e3%83%ab%e3%83%89%e3%82%ac%e3%82%a4%e3%83%89">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-reddit"
           viewBox="0 0 16 16">
           <path
@@ -665,7 +593,7 @@ PCBから少しでもスライドスイッチが浮くと、ボトムプレー�
 
     
     <li>
-      <a href="whatsapp://send?text=https%3a%2f%2fjetJaguar-psx.github.io%2fpost%2fbuildguide_ergogridgo2%2f&amp;description=ErgoGridGo2%20%e3%83%93%e3%83%ab%e3%83%89%e3%82%ac%e3%82%a4%e3%83%89" target="_blank" rel="noopener"
+      <a href="whatsapp://send?text=https%3a%2f%2fjetJaguar-psx.github.io%2fpost%2fbuildguide_reversibel_tastatur_v0%2f&amp;description=ErgoGridGo2%20%e3%83%93%e3%83%ab%e3%83%89%e3%82%ac%e3%82%a4%e3%83%89" target="_blank" rel="noopener"
         title="Share on WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-whatsapp" viewBox="0 0 16 16">
           <path
@@ -691,8 +619,8 @@ PCBから少しでもスライドスイッチが浮くと、ボトムプレー�
         
         <li class="list-group-item b-0 p-0">
 
-          <a type="button" class="btn btn-dark" role="button" href="https://jetJaguar-psx.github.io/post/buildguide_reversibel_tastatur_v0/"
-            data-toggle="tooltip" data-placement="top" title="ErgoGridGo2 ビルドガイド">&larr;
+          <a type="button" class="btn btn-dark" role="button" href="https://jetJaguar-psx.github.io/post/parts_list_ergogridgo2/"
+            data-toggle="tooltip" data-placement="top" title="ErgoGridGo2 v1.0 ボードのみ 必要なパーツのリスト">&larr;
             </a>
         </li>
         
@@ -700,8 +628,8 @@ PCBから少しでもスライドスイッチが浮くと、ボトムプレー�
 
         
         <li class="list-group-item ms-auto b-0 p-0">
-          <a type="button" class="btn btn-dark" role="button" href="https://jetJaguar-psx.github.io/post/userguide_ergogridgo2/"
-            data-toggle="tooltip" data-placement="top" title="ErgoGridGoシリーズ ユーザガイド">
+          <a type="button" class="btn btn-dark" role="button" href="https://jetJaguar-psx.github.io/post/buildguide_ergogridgo2/"
+            data-toggle="tooltip" data-placement="top" title="ErgoGridGo2 ビルドガイド">
             &rarr;</a>
         </li>
         
