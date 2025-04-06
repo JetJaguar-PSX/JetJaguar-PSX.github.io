@@ -64,7 +64,7 @@
   "headline": "Reversibel Tastatur ビルドガイド",
   "description" : "2025\/3\/22(土)のキーボードマーケットにて頒布した自作キーボード基板「Reversibel Tastatur」のビルドガイドです。\n目次 はじめに セット内容物一覧 セット以外で必要なもの スイッチプレートの用意 必要な工具 組み立て ファームウェアの書き込み 終わりに ご連絡先 はじめに\rキットをご購入いただいた方、お買い上げありがとうございます。 不備やわからないことがあれば遠慮なくお問い合わせください。\n注意事項 本キットはご購入者様がご自分で組み立てるキットです。 極めて簡単に組み立てられるように設計しておりますが、必ず組み立てる前にこのビルドガイドをご確認ください。 疑問点があれば、必ず組み立てる前に設計者まで問い合わせてください。取り返しのつかないミスをする前に確認することが大事です。\nセット内容物一覧\r内容物に不足や不良があれば、設計者までご連絡ください。\n品目 必要数 内容量 PCB 1枚 1枚 ボトムプレート 1枚 1枚 トッププレート 1枚 1枚 セット以外で必要なもの\r品目 必要数 キースイッチ 22個 1Uキーキャップ 21個 1.",
   "inLanguage" : "jp",
-  "wordCount":  149 ,
+  "wordCount":  155 ,
   "datePublished" : "2024-03-06T00:25:45",
   "dateModified" : "2024-03-06T00:25:45",
   "image" : "https:\/\/jetJaguar-psx.github.io\/",
@@ -92,7 +92,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="https://jetJaguar-psx.github.io/favicon/favicon-16x16.png">
 
 
-<meta name="generator" content="Hugo 0.106.0">
+<meta name="generator" content="Hugo 0.121.1">
 <link rel="alternate" href="https://jetJaguar-psx.github.io/index.xml" type="application/rss+xml" title="しいたけの部屋">
 <script src="https://jetJaguar-psx.github.io/js/dark-mode.js"></script><script src="https://jetJaguar-psx.github.io/vendor/lunr/lunr.min.js"></script><script src="https://jetJaguar-psx.github.io/vendor/lunr/lunr.stemmer.support.js"></script>
         <script src="https://jetJaguar-psx.github.io/vendor/lunr/lunr.jp.js"></script><script src="https://jetJaguar-psx.github.io/js/lunr-search.js" data-index="/search.json"></script><link rel="stylesheet" href="/style.min.css">
@@ -449,36 +449,42 @@ Boothにて修正したスイッチプレートを頒布しています。
 <p>PCB表面にTRRSジャックを取り付けます。裏表を間違えると他の部品と干渉しますので、よくご確認ください。表面から差し込んだ後、裏面からはんだ付けします。</p>
 <p> </p>
 <h3 id="はんだ付け-タクトスイッチ">はんだ付け② タクトスイッチ</h3>
-<p><img src="/images/EGG2_Reset.jpg" alt=""></p>
+<!-- ![](/images/EGG2_Reset.jpg) -->
 <p>PCBの表面、[RESET]と書かれた所にリセット用タクトスイッチを取り付けます。裏表を間違えると他の部品と干渉しますので、よくご確認ください。表面から差し込んだ後、裏面からはんだ付けします。</p>
 <p> </p>
 <h3 id="基板にコンスルーを差し込む">基板にコンスルーを差し込む</h3>
 <p>この段階では差し込むだけです。まだはんだ付けはしないでください。</p>
 <h4 id="コンスルーの向き">コンスルーの向き</h4>
-<p><img src="/images/EGG1_SPH.jpg" alt="">
-コンスルーには向きがあります。コンスルーは片方の側面に金色の部材が見える窓があります。この窓は若干片方のピンに寄っています。窓から遠い側のピンをPCBに、近い側のピンをマイコンボードに差します。この時、2つのコンスルーの窓がある面が必ず同じ方向に向くように差さないと、正常に導通せず動作不良を引き起こします。ご注意ください。</p>
+<p><img src="/images/EGG1_SPH.jpg" alt=""></p>
+<p>コンスルーには向きがあります。コンスルーは片方の側面に金色の部材が見える窓があります。この窓は若干片方のピンに寄っています。窓から遠い側のピンをPCBに、近い側のピンをマイコンボードに差します。この時、2つのコンスルーの窓がある面が必ず同じ方向に向くように差さないと、正常に導通せず動作不良を引き起こします。ご注意ください。</p>
+<p> </p>
+<h4 id="pro-microの向き">Pro Microの向き</h4>
+<p><strong>画像は左手用に組み立てる場合です。右手用に組み立てる場合は逆向きにしてください。</strong></p>
+<p><img src="/images/Reversibel/Left_ProMicro.jpg" alt=""></p>
+<p>左手用に組み立てる場合は部品実装面を下に、右手用に組み立てる場合は部品実装面を上にして取り付けてください。</p>
 <p> </p>
 <h3 id="はんだ付け-pro-microとコンスルー">はんだ付け③ Pro microとコンスルー</h3>
 <p><strong>はんだ付けするのはコンスルーとPro microだけです。コンスルーとPCBは着脱できるように、PCB側はんだ付けしないでください。</strong></p>
 <p> </p>
 <h3 id="はんだ付け-ダイオード">はんだ付け④ ダイオード</h3>
 <h4 id="ダイオードの足を曲げる">ダイオードの足を曲げる</h4>
-<p><img src="/images/EGG2_Diode.jpg" alt="">
-ダイオードの足を差込口の幅に合わせて曲げます。ダイオードベンダーがあると効率的に曲げられるのでおすすめです。</p>
+<p><img src="/images/EGG2_Diode.jpg" alt=""></p>
+<p>ダイオードの足を差込口の幅に合わせて曲げます。ダイオードベンダーがあると効率的に曲げられるのでおすすめです。</p>
 <h4 id="ダイオードの向きを揃えて挿入する">ダイオードの向きを揃えて挿入する</h4>
-<!-- ![](/images/EGG2_Diode2.jpg) -->
+<p><strong>画像は左手用に組み立てる場合です。右手用に組み立てる場合は逆向きにしてください。</strong></p>
+<p><img src="/images/Reversibel/Left_Diode_back.jpg" alt=""></p>
 <p>PCBの裏面からダイオードを差し込みます。</p>
-<!-- ![](/images/Diode.png) -->
+<p><img src="/images/Diode.png" alt=""></p>
 <p>ダイオードには向きがあり、間違えると隣接するキーが動作しなくなるなどの不具合を生じます。向きは上図の通りです。</p>
-<!-- ![](/images/EGG2_Diode3.jpg) -->
+<p><img src="/images/Reversibel/Left_Diode_front.jpg" alt=""></p>
 <p>PCB表面にて、ダイオードの足を広げておくと抜けにくくなり、安定してはんだ付けできます。</p>
 <h4 id="ダイオードのはんだ付け">ダイオードのはんだ付け</h4>
-<p><img src="/images/EGG2_Diode4.jpg" alt=""></p>
+<p>ダイオードが浮かないようにご注意ください。</p>
 <h4 id="ダイオードの足を切る">ダイオードの足を切る</h4>
 <p>PCB表面にはみ出たダイオードの足を、ペンチなどで切り落としましょう。この時、PCBの配線を傷つけないよう慎重に行ってください。</p>
 <p> </p>
 <h3 id="はんだ付け-四隅のキースイッチ">はんだ付け⑤ 四隅のキースイッチ</h3>
-<!-- 画像 -->
+<p><img src="/images/Reversibel/four_key.jpg" alt=""></p>
 <p>スイッチプレートの四隅の穴にキースイッチをはめて、それらのキースイッチをPCBに付けてください。最初に四隅から付けることで、スイッチプレートのずれを防ぎます。</p>
 <h3 id="はんだ付け-残りのキースイッチ">はんだ付け⑥ 残りのキースイッチ</h3>
 <p>残り18キーをスイッチプレート、PCBに差し、全てはんだ付けしましょう。これにてはんだ付けは終了です。</p>
@@ -503,7 +509,7 @@ Boothにて修正したスイッチプレートを頒布しています。
 <p>これにて組み立て完了です。お疲れ様でした！</p>
 <p> </p>
 <h2><a id="section7">ファームウェアの書き込み</a></h2>
-<p><strong>ファームウェアは準備中です。近日公開予定です。</strong></p>
+<p><strong>ファームウェアは現在Remapの審査待ちです。</strong></p>
 <p> </p>
 <h2><a id="section8">終わりに</a></h2>
 <p>完成したReversibel Tastaturの写真をSNS等に投稿していただけると嬉しいです。ハッシュタグは #Reversibel_Tastatur でお願いします。</p>
