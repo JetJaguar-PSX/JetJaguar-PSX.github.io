@@ -242,7 +242,48 @@ PCB表面の、マイコンボード周囲3ヶ所に長い方のスペーサー�
 
 <h2><a id="section7">ファームウェアの書き込み</a></h2>
 
-**ファームウェアは現在Remapの審査待ちです。**
+
+### ファームウェアのアップデート
+
+ファームウェアの変更があった際は[Twitterアカウント @Jetjaguar_ZL](https://twitter.com/JetJaguar_ZL)にて告知します。
+
+&nbsp;
+
+### ファームウェアを書き込む前に
+
+ファームウェアを書き込むと、キーマップは初期設定に戻ってしまいます。既にキーマップを設定済みの場合は、必ず控えを取ってください。
+
+&nbsp;
+
+### ファームウェアの配布場所
+
+キーマップ変更に用いるWebサイト「Remap」にて配布しています。お手持ちのキーボードに対応するリンクを選択してください。
+
+[左手用 ファームウェア配布ページ](https://remap-keys.app/catalog/miP5x1kdKCiHelqCpXnZ)
+
+[右手用 ファームウェア配布ページ](https://remap-keys.app/catalog/nnn8qoeLSepjRLVfj7Tz)
+
+[左右ペア用 ファームウェア配布ページ](https://remap-keys.app/catalog/SXKuDOMnN6EihmubCFzH/firmware)
+
+&nbsp;
+
+### Pro micro へのファームウェアの書き込み
+
+ファームウェア配布ページで、書き込みたいファームウェアの「FLASH」をクリックしてください。するとこのようなポップアップが表示されます。
+
+![](/images/flash.png)
+
+Bootloaderの欄は、Pro microを使用する場合「caterina」を選択してください。
+続いてキーボードのマイコンボードとPCをケーブルで繋ぎ、ポップアップ内の「FLASH」をクリックしてください。
+
+
+![](/images/serial.png)
+
+ブラウザの上部にこのようなポップアップが出ると思います。この欄にPro microが無い場合は、キーボードのリセットスイッチを押してください。USB-C端子のPro microの場合は、リセットスイッチを素早く2回押す必要があります。このポップアップからPro microを選択すると書き込みが始まります。
+
+![](/images/success.png)
+
+このような表示になれば書き込み成功です。
 
 &nbsp;
 

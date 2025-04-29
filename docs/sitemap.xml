@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jetJaguar-psx.github.io/mds_v1/</loc>
+    <lastmod>2025-04-11T00:25:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jetJaguar-psx.github.io/post/</loc>
+    <lastmod>2025-04-11T00:25:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jetJaguar-psx.github.io/</loc>
+    <lastmod>2025-04-11T00:25:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jetJaguar-psx.github.io/mds_v1/left/mds_01_mainboard/</loc>
+    <lastmod>2025-04-11T00:25:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jetJaguar-psx.github.io/mds_v1/left/mds_02_palmkey/</loc>
+    <lastmod>2025-04-11T00:25:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jetJaguar-psx.github.io/post/buildguide_mugen-daken-sammyaku_v1/</loc>
+    <lastmod>2025-04-11T00:25:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://jetJaguar-psx.github.io/subfolder/</loc>
     <lastmod>2025-02-14T00:00:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -12,18 +42,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jetJaguar-psx.github.io/</loc>
-    <lastmod>2025-02-14T00:00:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://jetJaguar-psx.github.io/subfolder/mini_game/</loc>
     <lastmod>2025-02-10T00:00:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jetJaguar-psx.github.io/post/</loc>
-    <lastmod>2024-12-31T22:06:23+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

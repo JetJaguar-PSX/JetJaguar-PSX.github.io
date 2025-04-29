@@ -6,8 +6,29 @@
     <description>Recent content on しいたけの部屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 11 Apr 2025 00:25:45 +0900</lastBuildDate>
     <atom:link href="https://jetJaguar-psx.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>無限打鍵山脈 v1 1合目：メイン基板の部品取り付け（左手用）</title>
+      <link>https://jetJaguar-psx.github.io/mds_v1/left/mds_01_mainboard/</link>
+      <pubDate>Fri, 11 Apr 2025 00:25:45 +0900</pubDate>
+      <guid>https://jetJaguar-psx.github.io/mds_v1/left/mds_01_mainboard/</guid>
+      <description>自作キーボードキット「無限打鍵山脈」のビルドガイド1合目、メイン基板の部品の取り付けです。&#xA;目次 使用する部品 部品のはんだ付け Pro microにコンスルーピンを付ける Pro micro固定プレートのネジ止め 1合目、踏破！ 使用する部品&#xD;キットに含まれるもの 品目 必要数 メイン基板 1枚 マイコンボード固定用プレート 1枚 5mmスペーサー 2個 3mmネジ 2個 4mmネジ 2個 リセットスイッチ 1個 TRRSジャック 2個 ピンヘッダ（2x3ピン） 1 ジャンパー 2 キット以外で必要なもの 品目 必要数 マイコンボード（Pro Micro） 1個 コンスルーピン（高さ2mm） 2本 部品のはんだ付け&#xD;ピンヘッダ メイン基板の表面中央あたり、画像の位置に2x3ピンのピンヘッダをはんだ付けします。</description>
+    </item>
+    <item>
+      <title>無限打鍵山脈 v1 2合目：手のひらキーの組み立て（左手用）</title>
+      <link>https://jetJaguar-psx.github.io/mds_v1/left/mds_02_palmkey/</link>
+      <pubDate>Fri, 11 Apr 2025 00:25:45 +0900</pubDate>
+      <guid>https://jetJaguar-psx.github.io/mds_v1/left/mds_02_palmkey/</guid>
+      <description>自作キーボードキット「無限打鍵山脈」のビルドガイド2合目、手のひらで押すキーの組み立てです。&#xA;目次 使用する部品 フレームの組み立て 1キー基板にはんだ付け 接続用基板にはんだ付け 基板の取り付け 2合目、踏破！！ 使用する部品&#xD;キットに含まれるもの 品目 必要数 アクリル製パーツ 4種類各1 基板4-2（1キー） 1 接続用基板4-2（2ピン） 1 ダイオード 1 垂直取付用スペーサー 10個 3mmネジ 7個 4mmネジ 20個 L型ピンヘッダ（1x2ピン） 2 ピンソケット（1x2ピン） 2 キット以外で必要なもの 品目 必要数 スイッチソケット 1個 フレームの組み立て&#xD;奥側のフレームの組み立て この2つのパネルを使います。</description>
+    </item>
+    <item>
+      <title>無限打鍵山脈 v1 ビルドガイド</title>
+      <link>https://jetJaguar-psx.github.io/post/buildguide_mugen-daken-sammyaku_v1/</link>
+      <pubDate>Fri, 11 Apr 2025 00:25:45 +0900</pubDate>
+      <guid>https://jetJaguar-psx.github.io/post/buildguide_mugen-daken-sammyaku_v1/</guid>
+      <description>自作キーボードキット「無限打鍵山脈」のビルドガイドです。&#xA;キットをご購入いただいた方、お買い上げありがとうございます。 不備やわからないことがあれば遠慮なくお問い合わせください。&#xA;目次 はじめに（このページ） 左手用 1合目：メイン基板の部品取り付け（左手用） 2合目：手のひらキーの組み立て（左手用） 3合目：親指キーとジョイスティックの組み立て（左手用） 4合目：中段の組み立て（左手用） 5合目：支柱の組み立て・取り付け（左手用） 6合目：下段の組み立て（左手用） 7合目：上段の組み立て（左手用） 8合目：右端の列の組み立て（左手用） 9合目：底板の取り付け（左手用） 10合目：キースイッチ・キーキャップの取り付け（左手用） 右手用 山頂：ファームウェアとカスタマイズ ご連絡先 はじめに キットをご購入いただいた方、お買い上げありがとうございます。 学外でのキット頒布は初めてなので、至らぬ点があると思います。 不備やわからないことがあれば遠慮なくお問い合わせください。&#xA;注意事項 本キットはご購入者様がご自分で組み立てるキットです。 簡単に組み立てられるように設計しておりますが、必ず組み立てる前にこのビルドガイドをご確認ください。 疑問点があれば、必ず組み立てる前に設計者まで問い合わせてください。取り返しのつかないミスをする前に確認することが大事です。&#xA;本キットの基板は全てリバーシブルで、左手用か右手用か選んで組み立てることができます。基板の裏表はお間違えの無いよう、よくご確認のうえ組み立ててください。&#xA;キット内容物一覧（片手分） 内容物に不足や不良があれば、設計者までご連絡ください。</description>
+    </item>
     <item>
       <title>ガジェットで五感をHackする</title>
       <link>https://jetJaguar-psx.github.io/subfolder/five-sense_hacking/</link>
