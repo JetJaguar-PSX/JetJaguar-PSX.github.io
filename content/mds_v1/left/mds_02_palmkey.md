@@ -15,8 +15,8 @@ draft: false
 ## 目次
 - [使用する部品](#section1)
 - [フレームの組み立て](#section2)
-- [1キー基板にはんだ付け](#section3)
-- [接続用基板にはんだ付け](#section4)
+- [基板4-2にはんだ付け](#section3)
+- [接続用基板4-2にはんだ付け](#section4)
 - [基板の取り付け](#section5)
 - [2合目、踏破！！](#section6)
 
@@ -93,7 +93,7 @@ draft: false
 &nbsp;
 &nbsp;
 
-<h2><a id="section3">1キー基板にはんだ付け</a></h2>
+<h2><a id="section3">基板4-2にはんだ付け</a></h2>
 
 ![](/images/mds_v1/left/02/key/palmkey_parts.jpg)
 
@@ -118,7 +118,7 @@ draft: false
 &nbsp;
 &nbsp;
 
-<h2><a id="section3">接続用基板にはんだ付け</a></h2>
+<h2><a id="section4">接続用基板4-2にはんだ付け</a></h2>
 
 ![](/images/mds_v1/left/02/connector/palmkey_connector_parts.jpg)
 
@@ -140,11 +140,11 @@ L型ピンヘッダを接続用基板に差し込み、はんだ付けします�
 
 ![](/images/mds_v1/left/02/connector/palmkey_connector_set.jpg)
 
-画像のように、メイン基板にピンソケットの先端が刺さるように接続用基板をあてがいます。安定しない場合はマスキングテープで仮止めしてください。
+画像のように、メイン基板にピンソケットの先端が刺さるように接続用基板4-2をあてがいます。安定しない場合はマスキングテープで仮止めしてください。
 
 ![](/images/mds_v1/left/02/connector/palmkey_set.jpg)
 
-メイン基板とは反対側のピンソケットが刺さるように、1キー基板を置き、**3mm**ネジでフレームに止めます。
+メイン基板とは反対側のピンソケットが刺さるように、基板4-2を置き、**3mm**ネジでフレームに止めます。
 
 ![](/images/mds_v1/left/02/connector/palmkey_connector_solder1.jpg)
 ![](/images/mds_v1/left/02/connector/palmkey_connector_solder2.jpg)
