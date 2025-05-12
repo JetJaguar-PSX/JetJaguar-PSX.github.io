@@ -9,6 +9,13 @@
     <lastBuildDate>Fri, 11 Apr 2025 00:25:45 +0900</lastBuildDate>
     <atom:link href="https://jetJaguar-psx.github.io/mds_v1/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>無限打鍵山脈 v1 10合目：底板・キースイッチ・キーキャップの取り付け（左手用）</title>
+      <link>https://jetJaguar-psx.github.io/mds_v1/left/mds_10_bottom-and-key/</link>
+      <pubDate>Fri, 11 Apr 2025 00:25:45 +0900</pubDate>
+      <guid>https://jetJaguar-psx.github.io/mds_v1/left/mds_10_bottom-and-key/</guid>
+      <description>自作キーボードキット「無限打鍵山脈」のビルドガイド10合目、底板・キースイッチ・キーキャップの取り付けです。&#xA;目次 使用する部品 底板の取り付け 中段のキースイッチの取り付け 下段のキースイッチの取り付け 残りのキースイッチの取り付け キーキャップの取り付け 交換用サムスティックの取り付け 登頂!!!!!!!!!! 使用する部品&#xD;キットに含まれるもの 品目 必要数 底面アクリル板 1 5mmネジ 4 ナット 4 ゴム足 適量 スイッチプレート2 1 スイッチプレート3 1 キット以外で必要なもの 品目 必要数 キースイッチ 22 キーキャップ 22 底板の取り付け&#xD;メイン基板の裏面に底面アクリル板を付けます。基板の表面にナットをあてがい、裏面から5mmネジを通します。</description>
+    </item>
+    <item>
       <title>無限打鍵山脈 v1 1合目：メイン基板の部品取り付け（右手用）</title>
       <link>https://jetJaguar-psx.github.io/mds_v1/right/mds_01_mainboard/</link>
       <pubDate>Fri, 11 Apr 2025 00:25:45 +0900</pubDate>
@@ -63,6 +70,20 @@
       <pubDate>Fri, 11 Apr 2025 00:25:45 +0900</pubDate>
       <guid>https://jetJaguar-psx.github.io/mds_v1/left/mds_07_row1/</guid>
       <description>自作キーボードキット「無限打鍵山脈」のビルドガイド7合目、上段の組み立てです。&#xA;目次 使用する部品 基板1-1にはんだ付け 基板1-2にはんだ付け スペーサーの取り付け 接続用基板1のはんだ付け 基板の取り付け・はんだ付け 基板1-2の接続 7合目、踏破!!!!!!! 使用する部品&#xD;キットに含まれるもの 品目 必要数 基板1-1（4キー） 1 基板1-2（1キー） 1 接続用基板1 1 ダイオード 5 垂直取付用スペーサー 4個 3.5mmスペーサー（円柱型） 2 3.5mmスペーサー（角柱型） 1 3mmネジ 10個 4mmネジ 4個 L型ピンヘッダ（2x3ピン） 2 ピンソケット（2x3ピン） 2 キット以外で必要なもの 品目 必要数 スイッチソケット 5個 基板1-1にはんだ付け&#xD;基板の裏表をよくご確認ください。</description>
+    </item>
+    <item>
+      <title>無限打鍵山脈 v1 8合目：右端の列の組み立て（左手用）</title>
+      <link>https://jetJaguar-psx.github.io/mds_v1/left/mds_08_col5-1/</link>
+      <pubDate>Fri, 11 Apr 2025 00:25:45 +0900</pubDate>
+      <guid>https://jetJaguar-psx.github.io/mds_v1/left/mds_08_col5-1/</guid>
+      <description>自作キーボードキット「無限打鍵山脈」のビルドガイド8合目、右端の列の組み立てです。&#xA;目次 使用する部品 基板5-2にはんだ付け 基板5-1、5-3にはんだ付け 基板5-1の取り付け・はんだ付け 基板5-3の取り付け・はんだ付け 8合目、踏破!!!!!!!! 使用する部品&#xD;キットに含まれるもの 品目 必要数 基板5-1（TキーまたはYキー） 1 基板5-2（GキーまたはHキー） 1 基板5-3（BキーまたはNキー） 1 ダイオード 3 垂直取付用スペーサー 8個 3mmネジ 10個 4mmネジ 4個 ピンヘッダ（1x2ピン） 1 L型ピンヘッダ（1x2ピン） 1 ピンソケット（1x2ピン） 1 アクリル製パーツ5-1A 1 アクリル製パーツ5-1A 1 アクリル製パーツ5-2 1 キット以外で必要なもの 品目 必要数 スイッチソケット 3個 基板5-2にはんだ付け&#xD;基板の裏表をよくご確認ください。</description>
+    </item>
+    <item>
+      <title>無限打鍵山脈 v1 9合目：右端の列の取り付け（左手用）</title>
+      <link>https://jetJaguar-psx.github.io/mds_v1/left/mds_09_col5-2/</link>
+      <pubDate>Fri, 11 Apr 2025 00:25:45 +0900</pubDate>
+      <guid>https://jetJaguar-psx.github.io/mds_v1/left/mds_09_col5-2/</guid>
+      <description>自作キーボードキット「無限打鍵山脈」のビルドガイド9合目、右端の列の取り付けです。&#xA;目次 使用する部品 フレームCの組み立て フレームDの組み立て 接続用基板5のはんだ付け 基板の取り付け・組み立て 9合目、踏破!!!!!!!!! 使用する部品&#xD;キットに含まれるもの 品目 必要数 frame-C 2種類各1 frame-D 2種類各1 垂直取付用スペーサー 4個 3mmネジ 8個 4mmネジ 20個 接続用基板5 1 L型ピンヘッダ（1x4ピン） 2 ピンソケット（1x4ピン） 2 先の工程で組み立てたもの 品目 必要数 基板5-1,5-2,5-3を組み合わせたもの 1 フレームCの組み立て&#xD;この2つのパネルを使います。</description>
     </item>
     <item>
       <title>無限打鍵山脈 v1 ご連絡</title>

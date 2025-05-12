@@ -4,7 +4,7 @@ date: 2025-04-11T00:25:45+09:00
 description : ""
 tags: [""]
 image : ""
-draft: true
+draft: false
 ---
 
 自作キーボードキット「無限打鍵山脈」のビルドガイド8合目、右端の列の組み立てです。
@@ -57,7 +57,9 @@ draft: true
 
 <h2><a id="section2">基板5-2にはんだ付け</a></h2>
 
-![](/images/mds_v1/left/07/.jpg)
+![](/images/mds_v1/left/08/PCB-5-2_front.jpg)
+
+![](/images/mds_v1/left/08/PCB-5-2_back.jpg)
 
 **基板の裏表をよくご確認ください。**
 
@@ -68,7 +70,9 @@ draft: true
 
 <h2><a id="section3">基板5-1、5-3にはんだ付け</a></h2>
 
-![](/images/mds_v1/left/07/.jpg)
+![](/images/mds_v1/left/08/PCB-5-1_back.jpg)
+
+![](/images/mds_v1/left/08/PCB-5-3_back.jpg)
 
 基板5-1、5-3の**裏面**にスイッチソケットをはんだ付けします。
 
@@ -77,23 +81,19 @@ draft: true
 
 <h2><a id="section4">基板5-1の取り付け・はんだ付け</a></h2>
 
-![](/images/mds_v1/left/07/.jpg)
+![](/images/mds_v1/left/08/PCB-5-2_panels.jpg)
 
-画像のように、アクリル板に垂直取付用スペーサーを**4mm**ネジで取り付けます。
+画像のように、アクリル板を基板5-2に取り付けます。アクリル板とスペーサーは**4mm**ネジで、スペーサーとPCBは**3mm**ネジで止めます。
 
-![](/images/mds_v1/left/07/.jpg)
-
-画像のように、アクリル板を基板5-2に取り付けます。
-
-![](/images/mds_v1/left/07/.jpg)
+![](/images/mds_v1/left/08/PCB-5-1_pin_connected.jpg)
 
 ピンヘッダ（1x2ピン）とピンソケット（1x2ピン）を繋げます。
 
-![](/images/mds_v1/left/07/.jpg)
+![](/images/mds_v1/left/08/PCB-5-1_attached.jpg)
 
 ピンヘッダが基板5-1に、ピンソケットが基板5-2に刺さるようにあてがいます。
 
-![](/images/mds_v1/left/07/.jpg)
+![](/images/mds_v1/left/08/PCB-5-1_attached_front.jpg)
 
 基板5-1を**3mm**ネジで止め、ピンヘッダ、ピンソケットをはんだ付けします。
 
@@ -102,23 +102,17 @@ draft: true
 
 <h2><a id="section5">基板5-3の取り付け・はんだ付け</a></h2>
 
-![](/images/mds_v1/left/07/.jpg)
+![](/images/mds_v1/left/08/PCB-5-3_panels.jpg)
 
-画像のように、アクリル板に垂直取付用スペーサーを**4mm**ネジで取り付けます。
+画像のように、アクリル板を基板5-3に取り付けます。アクリル板とスペーサーは**4mm**ネジで、スペーサーとPCBは**3mm**ネジで止めます。
 
-![](/images/mds_v1/left/07/.jpg)
-
-画像のように、アクリル板を基板5-3に取り付けます。
-
-![](/images/mds_v1/left/07/.jpg)
+![](/images/mds_v1/left/08/PCB-5-3_pin_connected.jpg)
 
 L型ピンヘッダ（1x2ピン）とピンソケット（1x2ピン）を繋げます。
 
-![](/images/mds_v1/left/07/.jpg)
+![](/images/mds_v1/left/08/PCB-5-3_attached_front.jpg)
 
 ピンヘッダが基板5-3に、ピンソケットが基板5-2に刺さるようにあてがいます。
-
-![](/images/mds_v1/left/07/.jpg)
 
 基板5-2を**3mm**ネジで止め、ピンヘッダ、ピンソケットをはんだ付けします。
 
@@ -129,4 +123,4 @@ L型ピンヘッダ（1x2ピン）とピンソケット（1x2ピン）を繋げ�
 
 これにて右端の列の組み立ては完了です。続いて、組み立てた右端の列を取り付けます。
 
-[8合目：右端の列の取り付け（左手用）](./../MDS/)
+[8合目：右端の列の取り付け（左手用）](./../../mds_v1/left/mds_09_col5-2)

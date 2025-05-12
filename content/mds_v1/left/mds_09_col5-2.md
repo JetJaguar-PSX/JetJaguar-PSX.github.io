@@ -4,7 +4,7 @@ date: 2025-04-11T00:25:45+09:00
 description : ""
 tags: [""]
 image : ""
-draft: true
+draft: false
 ---
 
 自作キーボードキット「無限打鍵山脈」のビルドガイド9合目、右端の列の取り付けです。
@@ -51,19 +51,15 @@ draft: true
 
 <h2><a id="section2">フレームCの組み立て</a></h2>
 
-![](/images/mds_v1/left/02/frame_C_panels.jpg)
+![](/images/mds_v1/left/09/framepanels.jpg)
 
 この2つのパネルを使います。
 
-![](/images/mds_v1/left/02/frame_A-1.jpg)
+![](/images/mds_v1/left/09/frame_C_built.jpg)
 
-画像のように、片方のパネルに垂直取付用スペーサーを**4mm**ネジで取り付けます。
+画像のように、フレームを垂直取付用スペーサーと**4mm**ネジで組み立てます。
 
-![](/images/mds_v1/left/02/frame_A-2.jpg)
-
-もう一方のパネルを**4mm**ネジで止めます。
-
-![](/images/mds_v1/left/02/frame_A_set.jpg)
+![](/images/mds_v1/left/09/frame_C_attached.jpg)
 
 組み立てたフレームをメイン基板に**3mm**ネジで止めます。
 
@@ -72,36 +68,33 @@ draft: true
 
 <h2><a id="section3">フレームDの組み立て</a></h2>
 
-![](/images/mds_v1/left/02/frame_B_panels.jpg)
+![](/images/mds_v1/left/09/frame_D_panels.jpg)
 
 この2つのパネルを使います。
 
-![](/images/mds_v1/left/02/frame_B-1.jpg)
+![](/images/mds_v1/left/09/frame_D_built.jpg)
 
-画像のように、片方のパネルに垂直取付用スペーサーを**4mm**ネジで取り付けます。
+画像のように、フレームを垂直取付用スペーサーと**4mm**ネジで組み立てます。
 
-![](/images/mds_v1/left/02/frame_B-2.jpg)
-
-もう一方のパネルを**4mm**ネジで止めます。
-
-![](/images/mds_v1/left/02/frame_B_set.jpg)
+![](/images/mds_v1/left/09/frame_D_attached.jpg)
 
 組み立てたフレームをメイン基板に**3mm**ネジで止めます。
 
 &nbsp;
 &nbsp;
 
+
 <h2><a id="section4">接続用基板5にはんだ付け</a></h2>
 
-![](/images/mds_v1/left/06/.jpg)
+![](/images/mds_v1/left/09/connector-5_parts.jpg)
 
 L型ピンヘッダとピンソケットを用います。
 
-![](/images/mds_v1/left/06/.jpg)
+![](/images/mds_v1/left/09/pin_connected.jpg)
 
 画像のようにL型ピンヘッダとピンソケットを繋げます。
 
-![](/images/mds_v1/left/06/.jpg)
+![](/images/mds_v1/left/09/connector-5_pin.jpg)
 
 L型ピンヘッダを接続用基板に差し込み、はんだ付けします。このとき、ピンヘッダの向きが傾かないようにご注意ください。
 
@@ -110,15 +103,13 @@ L型ピンヘッダを接続用基板に差し込み、はんだ付けします�
 
 <h2><a id="section5">基板の取り付け・組み立て</a></h2>
 
-![](/images/mds_v1/left/02/connector-2_attached.jpg)
+![](/images/mds_v1/left/09/connector-5_attached.jpg)
 
 画像のように、メイン基板にピンソケットの先端が刺さるように接続用基板5をあてがいます。安定しない場合はマスキングテープで仮止めしてください。
 
-![](/images/mds_v1/left/02/pcb-2_attached.jpg)
+![](/images/mds_v1/left/09/PCB-5-2_attached.jpg)
 
 メイン基板とは反対側のピンソケットが刺さるように、基板5-2を置き、**3mm**ネジでフレームC,Dに止めます。
-
-![](/images/mds_v1/left/02/pcb-2_attached.jpg)
 
 ここで、右端とその隣の列にキースイッチ、キーキャップを取り付け、干渉していないかご確認ください。
 
@@ -132,4 +123,4 @@ L型ピンヘッダを接続用基板に差し込み、はんだ付けします�
 
 これにて右端の列の取り付けは完了です。次が最後の工程です。
 
-[3合目：下段の組み立て（左手用）](./../../mds_v1/left/mds_06_row3)
+[3合目：下段の組み立て（左手用）](./../../mds_v1/left/mds_10_bottom-and-key)

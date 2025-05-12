@@ -4,7 +4,7 @@ date: 2025-04-11T00:25:45+09:00
 description : ""
 tags: [""]
 image : ""
-draft: true
+draft: false
 ---
 
 自作キーボードキット「無限打鍵山脈」のビルドガイド10合目、底板・キースイッチ・キーキャップの取り付けです。
@@ -52,7 +52,9 @@ draft: true
 
 <h2><a id="section2">底板の取り付け</a></h2>
 
-![](/images/mds_v1/left/02/frame_A_panels.jpg)
+![](/images/mds_v1/left/10/bottom_plate.jpg)
+
+![](/images/mds_v1/left/10/bottom_attached.jpg)
 
 メイン基板の裏面に底面アクリル板を付けます。基板の表面にナットをあてがい、裏面から**5mm**ネジを通します。
 
@@ -63,7 +65,11 @@ draft: true
 
 <h2><a id="section3">中段のキースイッチの取り付け</a></h2>
 
-![](/images/mds_v1/left/02/frame_A_panels.jpg)
+![](/images/mds_v1/left/10/SwitchPlate-2.jpg)
+
+![](/images/mds_v1/left/10/SwitchPlate-2_set.jpg)
+
+![](/images/mds_v1/left/10/SwitchPlate-2_attached.jpg)
 
 スイッチプレート2にキースイッチを4つはめて、基板2-1に取り付けてください。
 基板2-2にもキースイッチを取り付けてください。
@@ -73,16 +79,14 @@ draft: true
 
 <h2><a id="section4">下段のキースイッチの取り付け</a></h2>
 
-![](/images/mds_v1/left/02/frame_A_panels.jpg)
+![](/images/mds_v1/left/10/SwitchPlate-3.jpg)
 
-スイッチプレート3にキースイッチを5つはめて、基板2-1に取り付けてください。
+スイッチプレート3にキースイッチを5つはめて、基板3に取り付けてください。
 
 &nbsp;
 &nbsp;
 
 <h2><a id="section4">残りのキースイッチの取り付け</a></h2>
-
-![](/images/mds_v1/left/02/frame_A_panels.jpg)
 
 残りのキースイッチを取り付けてください。
 
@@ -91,16 +95,12 @@ draft: true
 
 <h2><a id="section6">キーキャップの取り付け</a></h2>
 
-![](/images/mds_v1/left/02/frame_A_panels.jpg)
-
 キースイッチと同じ順で、キーキャップを取り付けてください。
 
 &nbsp;
 &nbsp;
 
 <h2><a id="section7">交換用サムスティックの取り付け</a></h2>
-
-![](/images/mds_v1/left/02/frame_A_panels.jpg)
 
 ジョイスティックに交換用サムスティックをはめてください。
 
