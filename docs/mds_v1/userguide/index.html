@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="jp" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>無限打鍵山脈 v1 ファームウェアとカスタマイズ - しいたけの部屋</title>
+<meta name="description" content="自作キーボードキット「ErgoGridGo」と「ErgoGridGo2」のユーザガイドです。
+このガイドは以下のキーボードを対象としています。
+ErgoGridGo v1.0 （非売品） ErgoGridGo v1.1（島根大学大学祭などで頒布） ErgoGridGo2 v1.0（キーケットなどで頒布） ErgoGridGo2 v1.1（キーケットなどで頒布） 目次 ファームウェアのアップデート キーマップの変更 使用上の注意 よくあるトラブル ファームウェアのアップデートファームウェアの変更があった際はTwitterアカウント @Jetjaguar_ZLにて告知します。
+ファームウェアを書き込む前に ファームウェアを書き込むと、キーマップは初期設定に戻ってしまいます。既にキーマップを設定済みの場合は、必ず控えを取ってください。
+ファームウェアの配布場所 キーマップ変更に用いるWebサイト「Remap」にて配布しています。お手持ちのキーボードに対応するリンクを選択してください。
+無限打鍵山脈 左右ペア ファームウェア配布ページ
+Pro micro へのファームウェアの書き込み ファームウェア配布ページで、書き込みたいファームウェアの「FLASH」をクリックしてください。するとこのようなポップアップが表示されます。">
+
+<meta name="author" content="Shiitake"><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "しいたけの部屋",
+    
+    "url": "https:\/\/jetJaguar-psx.github.io\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/jetJaguar-psx.github.io\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/jetJaguar-psx.github.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/jetJaguar-psx.github.io\/mds_v1\/userguide\/",
+          "name": "無限打鍵山脈 v1 ファームウェアとカスタマイズ"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Shiitake"
+  },
+  "headline": "無限打鍵山脈 v1 ファームウェアとカスタマイズ",
+  "description" : "自作キーボードキット「ErgoGridGo」と「ErgoGridGo2」のユーザガイドです。\nこのガイドは以下のキーボードを対象としています。\nErgoGridGo v1.0 （非売品） ErgoGridGo v1.1（島根大学大学祭などで頒布） ErgoGridGo2 v1.0（キーケットなどで頒布） ErgoGridGo2 v1.1（キーケットなどで頒布） 目次 ファームウェアのアップデート キーマップの変更 使用上の注意 よくあるトラブル ファームウェアのアップデート\rファームウェアの変更があった際はTwitterアカウント @Jetjaguar_ZLにて告知します。\nファームウェアを書き込む前に ファームウェアを書き込むと、キーマップは初期設定に戻ってしまいます。既にキーマップを設定済みの場合は、必ず控えを取ってください。\nファームウェアの配布場所 キーマップ変更に用いるWebサイト「Remap」にて配布しています。お手持ちのキーボードに対応するリンクを選択してください。\n無限打鍵山脈 左右ペア ファームウェア配布ページ\nPro micro へのファームウェアの書き込み ファームウェア配布ページで、書き込みたいファームウェアの「FLASH」をクリックしてください。するとこのようなポップアップが表示されます。",
+  "inLanguage" : "jp",
+  "wordCount":  89 ,
+  "datePublished" : "2024-03-09T10:36:49",
+  "dateModified" : "2024-03-09T10:36:49",
+  "image" : "https:\/\/jetJaguar-psx.github.io\/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/jetJaguar-psx.github.io\/mds_v1\/userguide\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/jetJaguar-psx.github.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/jetJaguar-psx.github.io\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:url" content="https://jetJaguar-psx.github.io/mds_v1/userguide/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="しいたけの部屋">
+
+<link rel="apple-touch-icon" sizes="180x180" href=" https://jetJaguar-psx.github.io/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jetJaguar-psx.github.io/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jetJaguar-psx.github.io/favicon/favicon-16x16.png">
+
+
+<meta name="generator" content="Hugo 0.121.1">
+<link rel="alternate" href="https://jetJaguar-psx.github.io/index.xml" type="application/rss+xml" title="しいたけの部屋">
+<script src="https://jetJaguar-psx.github.io/js/dark-mode.js"></script><script src="https://jetJaguar-psx.github.io/vendor/lunr/lunr.min.js"></script><script src="https://jetJaguar-psx.github.io/vendor/lunr/lunr.stemmer.support.js"></script>
+        <script src="https://jetJaguar-psx.github.io/vendor/lunr/lunr.jp.js"></script><script src="https://jetJaguar-psx.github.io/js/lunr-search.js" data-index="/search.json"></script><link rel="stylesheet" href="/style.min.css">
+
+
+
+
+
+
+
+  </head>
+  <body>
+    
+<div class="container fixed-top mw-100">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
+        <div class="container">
+
+          <a class="navbar-brand fw-bold" href="https://jetJaguar-psx.github.io/">しいたけの部屋</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-baseline">
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Home"
+                  href="/"> Home</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Posts"
+                  href="/post/"> Posts</a>
+              </li>
+
+              
+              
+
+              <li class="nav-item nav-link">
+                <a id="dark-mode-toggle" class="bi bi-moon-stars" role="button"></a>
+              </li>
+
+              
+              <li class="nav-item search-item">
+                <form id="search" class="search" role="search">
+                  <label for="search-input" class="bi bi-search search-icon"></label>
+                  <input type="search" id="search-input" class="search-input">
+                </form>
+              </li>
+              
+            </ul>
+
+            
+            <template id="search-heading" hidden
+                data-results-none=""
+                data-results-one=""
+                data-results-many=""
+            >
+              <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+                  <h1 id="search-title" class="search-title"></h1>
+                </div>
+              </div>
+            </template>
+
+            <template id="search-result" hidden>
+              <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+                  <article class="content post">
+                    <h2><a class="summary-title-link"></a></h2>
+                    <div class="post-entry"></div>
+                    <div class="read-more-section">
+                      <h6 class="text-muted link-underline">
+                        <a class="read-more-link">
+                          
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </h6>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </template>
+            
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+<header class="header-section ">
+
+  <div class="intro-header no-img mt-10">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+
+          
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            
+
+            <div class="mds_v1-heading">
+              
+
+              
+
+              
+              <h1 class="fw-semibold display-5 lh-1 mb-3"> 
+                無限打鍵山脈 v1 ファームウェアとカスタマイズ
+                
+              </h1>
+              
+              
+
+              
+
+              
+              
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        
+    </div>
+  </div>
+</header>
+
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+
+      <div class="card-image card-image-blog p-0">
+        
+        
+
+
+        
+      </div>
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      <article role="main" class="blog-post">
+        <p>自作キーボードキット「ErgoGridGo」と「ErgoGridGo2」のユーザガイドです。</p>
+<p>このガイドは以下のキーボードを対象としています。</p>
+<ul>
+<li>ErgoGridGo v1.0 （非売品）</li>
+<li>ErgoGridGo v1.1（島根大学大学祭などで頒布）</li>
+<li>ErgoGridGo2 v1.0（キーケットなどで頒布）</li>
+<li>ErgoGridGo2 v1.1（キーケットなどで頒布）</li>
+</ul>
+<p> </p>
+<h2 id="目次">目次</h2>
+<ul>
+<li><a href="#section1">ファームウェアのアップデート</a></li>
+<li><a href="#section2">キーマップの変更</a></li>
+<li><a href="#section3">使用上の注意</a></li>
+<li><a href="#section4">よくあるトラブル</a></li>
+</ul>
+<p> </p>
+<h2><a id="section1">ファームウェアのアップデート</a></h2>
+<p>ファームウェアの変更があった際は<a href="https://twitter.com/JetJaguar_ZL">Twitterアカウント @Jetjaguar_ZL</a>にて告知します。</p>
+<p> </p>
+<h3 id="ファームウェアを書き込む前に">ファームウェアを書き込む前に</h3>
+<p>ファームウェアを書き込むと、キーマップは初期設定に戻ってしまいます。既にキーマップを設定済みの場合は、必ず控えを取ってください。</p>
+<p> </p>
+<h3 id="ファームウェアの配布場所">ファームウェアの配布場所</h3>
+<p>キーマップ変更に用いるWebサイト「Remap」にて配布しています。お手持ちのキーボードに対応するリンクを選択してください。</p>
+<!-- [無限打鍵山脈 左手のみ ファームウェア配布ページ]() -->
+<!-- [無限打鍵山脈 右手のみ ファームウェア配布ページ]() -->
+<p><a href="">無限打鍵山脈 左右ペア ファームウェア配布ページ</a></p>
+<p> </p>
+<h3 id="pro-micro-へのファームウェアの書き込み">Pro micro へのファームウェアの書き込み</h3>
+<p>ファームウェア配布ページで、書き込みたいファームウェアの「FLASH」をクリックしてください。するとこのようなポップアップが表示されます。</p>
+<p><img src="/images/flash.png" alt=""></p>
+<p>Bootloaderの欄は、Pro microを使用する場合「caterina」を選択してください。
+続いてキーボードのマイコンボードとPCをケーブルで繋ぎ、ポップアップ内の「FLASH」をクリックしてください。</p>
+<p><img src="/images/serial.png" alt=""></p>
+<p>ブラウザの上部にこのようなポップアップが出ると思います。この欄にPro microが無い場合は、キーボードのリセットスイッチを押してください。USB-C端子のPro microの場合は、リセットスイッチを素早く2回押す必要があります。このポップアップからPro microを選択すると書き込みが始まります。</p>
+<p><img src="/images/success.png" alt=""></p>
+<p>このような表示になれば書き込み成功です。</p>
+<p> 
+ </p>
+<h2><a id="section2">キーマップの変更</a></h2>
+<p>ErgoGridGoシリーズは<a href="https://remap-keys.app/">Remap</a>でキーマップを変更することができます。</p>
+<h3 id="本キット独自のキー">本キット独自のキー</h3>
+<p>無限打鍵山脈ではジョイスティックの設定などのため、独自のキーを設定しています。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kb01</td>
+<td>オートマウス機能の切替</td>
+</tr>
+<tr>
+<td>kb02</td>
+<td>ジョイスティックのキャリブレーション※1</td>
+</tr>
+<tr>
+<td>kb03</td>
+<td>左ジョイスティックのモード切替</td>
+</tr>
+<tr>
+<td>kb04</td>
+<td>右ジョイスティックのモード切替</td>
+</tr>
+</tbody>
+</table>
+<p>※1 キャリブレーション時は、ジョイスティックに触れないでください。</p>
+<p> 
+ </p>
+<h2><a id="section3">ジョイスティックの機能</a></h2>
+<h3 id="搭載しているモードとモード切替順">搭載しているモードとモード切替順</h3>
+<p>無限打鍵山脈のジョイスティックには以下のモードがあり、左右のジョイスティックそれぞれでいつでも切替可能です。</p>
+<ol>
+<li>マウスカーソル</li>
+<li>スクロール</li>
+<li>方向キー（試作段階）</li>
+<li>Autodesk Fusion用機能（開発中。今後のアップデートにて実装予定。左右ペアで使う場合のみ有効。）</li>
+</ol>
+<p>モード切替キーを押す度に、上記の順（マウス→スクロール→…）で切り替わります。</p>
+<h3 id="方向キー機能試作段階">方向キー機能（試作段階）</h3>
+<p>ジョイスティックを倒した方向に応じて、割り当てたキーを入力します。リリース時点のファームウェアでは、方向キー機能はレイヤ切り替えに対応しておらず、レイヤ0にて割り当てたキーが入力されます。</p>
+<h3 id="autodesk-fusion用機能">Autodesk Fusion用機能</h3>
+<p>左右のジョイスティックを組み合わせてFusionの3Dモデリングを操作するための機能です。</p>
+<!-- 片方のジョイスティックをこのモードに、もう片方をマウスモードに設定した場合に以下のように動作します。
+
+|  スティックの状態  |  動作内容  |
+| ---- | ---- |
+|  マウスモードの方だけ傾ける  |  マウスカーソル操作  |
+|  Fusionモードの方だけ傾ける  |  オービット  |
+|  両方同じ方向に倒す  |  パン  |
+|  左を左に、右を右に倒す  |  ズームイン  |
+|  左を右に、右を左に倒す  |  ズームアウト  |
+|  左を上に、右を下に倒す  |    |
+|  左を下に、右を上に倒す  |    | -->
+<h3 id="ジョイスティックの機能について">ジョイスティックの機能について</h3>
+<p>今後のファームウェアアップデートで、ジョイスティックの機能を順次追加および改良していく予定です。機能追加や改良のご要望がございましたら、遠慮なくお問い合わせください。</p>
+<p> 
+ </p>
+<h2><a id="section3">使用上の注意</a></h2>
+<h3 id="左右間を繋ぐtrrsケーブルについて">左右間を繋ぐTRRSケーブルについて</h3>
+<ul>
+<li>無限打鍵山脈にはAとBの2つのTRRSジャックがあります。AとA、BとBを繋いでください。</li>
+<li>TRRSケーブルを抜き差しする場合は、マイコンボードに給電されていない状態で行ってください。給電中の抜き差しは、ショートなどを引き起こしマイコンを破壊してしまう場合があります。</li>
+</ul>
+<h3 id="その他">その他</h3>
+<ul>
+<li>振動などでネジが徐々に緩む場合があります。キーボードを軽く振って音がしたら、ネジが緩んでいる可能性が高いです。定期的に締め直しましょう。</li>
+<li>マイコンボードにケーブルを抜き差しする際は真っ直ぐに差しましょう。力のかけ方によってはコンスルーピンがPCBから浮いてしまう可能性があります。</li>
+<li>コンスルーピンは抜き差し可能ではありますが、回数に限りがあります。頻繫な抜き差しは控えましょう。</li>
+</ul>
+<p> 
+ </p>
+<h2><a id="section4">よくあるトラブル</a></h2>
+<p>ユーザの皆様から寄せられたトラブルと、その対応策を紹介させていただきます。</p>
+<h3 id="キーの反応が悪い勝手に反応する">キーの反応が悪い、勝手に反応する</h3>
+<ol>
+<li>まずはコンスルーピンがPCBから浮いていないか確認してください。この場合が非常に多いです。</li>
+<li>はんだ付けに不備が無いかもご確認ください。</li>
+<li>原因が特定できない場合は設計者へご連絡ください。</li>
+</ol>
+<h3 id="マイコンが接続先の端末から認識されなくなった">マイコンが接続先の端末から認識されなくなった</h3>
+<ul>
+<li>マイコンボードに給電されているときにTRRSケーブルを抜き差ししてしまうと、マイコンボードを再起不能にしてしまう場合があります。復旧不能なのでPro microをお買い換えください。</li>
+<li>ファームウェア書き込み時に、誤ったブートローダを選択するなどしてマイコンボードを再起不能にしてしまう場合があります。もう一台Pro microがあれば蘇生できる場合がありますが、極めて特殊な手法ですので、当方はサポート外とします。</li>
+</ul>
+
+      </article>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+      <hr class="m-0"/>
+    </div>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
+      
+      <div class="blog-tags">
+        
+        <a href="https://jetJaguar-psx.github.io/tags//"></a>
+        
+      </div>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      
+      <section id="social-share">
+        <div class="list-inline footer-links">
+          
+
+<div>
+  <p>Use the share button below if you liked it.</p>
+</div>
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+    <li>
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjetJaguar-psx.github.io%2fmds_v1%2fuserguide%2f" target="_blank" title="Share on Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </svg>
+      </a>
+    </li>
+    
+    <li>
+      <a href="//twitter.com/share?url=https%3a%2f%2fjetJaguar-psx.github.io%2fmds_v1%2fuserguide%2f&amp;text=%e7%84%a1%e9%99%90%e6%89%93%e9%8d%b5%e5%b1%b1%e8%84%88%20v1%20%e3%83%95%e3%82%a1%e3%83%bc%e3%83%a0%e3%82%a6%e3%82%a7%e3%82%a2%e3%81%a8%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%82%a4%e3%82%ba&amp;via=map%5bname%3aShiitake%5d"
+        target="_blank" title="Share on Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-twitter-x" viewBox="0 0 16 16">
+          <path
+            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+        </svg>
+      </a>
+    </li>
+
+
+    
+    <li>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjetJaguar-psx.github.io%2fmds_v1%2fuserguide%2f&amp;title=%e7%84%a1%e9%99%90%e6%89%93%e9%8d%b5%e5%b1%b1%e8%84%88%20v1%20%e3%83%95%e3%82%a1%e3%83%bc%e3%83%a0%e3%82%a6%e3%82%a7%e3%82%a2%e3%81%a8%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%82%a4%e3%82%ba"
+        target="_blank" title="Share on LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+        </svg>
+      </a>
+    </li>
+
+    <li>
+      <a target="_blank" rel="noopener noreferrer" aria-label="share 無限打鍵山脈 v1 ファームウェアとカスタマイズ on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fjetJaguar-psx.github.io%2fmds_v1%2fuserguide%2f&title=%e7%84%a1%e9%99%90%e6%89%93%e9%8d%b5%e5%b1%b1%e8%84%88%20v1%20%e3%83%95%e3%82%a1%e3%83%bc%e3%83%a0%e3%82%a6%e3%82%a7%e3%82%a2%e3%81%a8%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%82%a4%e3%82%ba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-reddit"
+          viewBox="0 0 16 16">
+          <path
+            d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z" />
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z" />
+        </svg>
+      </a>
+    </li>
+
+    
+    
+
+
+    
+    <li>
+      <a href="whatsapp://send?text=https%3a%2f%2fjetJaguar-psx.github.io%2fmds_v1%2fuserguide%2f&amp;description=%e7%84%a1%e9%99%90%e6%89%93%e9%8d%b5%e5%b1%b1%e8%84%88%20v1%20%e3%83%95%e3%82%a1%e3%83%bc%e3%83%a0%e3%82%a6%e3%82%a7%e3%82%a2%e3%81%a8%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%82%a4%e3%82%ba" target="_blank" rel="noopener"
+        title="Share on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-whatsapp" viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<p class="text-muted">It makes me smile, when I see it.</p>
+        </div>
+      </section>
+      
+    </div>
+
+    
+
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-1 pt-4">
+      
+      <ul class="list-group list-group-horizontal" style="flex-direction: row">
+        
+
+
+        
+        <li class="list-group-item ms-auto b-0 p-0">
+          <a type="button" class="btn btn-dark" role="button" href="https://jetJaguar-psx.github.io/mds_v1/contact/"
+            data-toggle="tooltip" data-placement="top" title="無限打鍵山脈 v1 ご連絡">
+            &rarr;</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+    </div>
+  </div>
+  
+</div>
+
+<div class="">
+  
+  
+  
+  
+  
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 mt-3">
+        <h3></h3>
+        <hr />
+      </div>
+
+      
+      
+
+      
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://jetJaguar-psx.github.io/mds_v1/left/mds_10_bottom-and-key/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">無限打鍵山脈 v1 10合目：底板・キースイッチ・キーキャップの取り付け（左手用）</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  111112 April 11
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    自作キーボードキット「無限打鍵山脈」のビルドガイド10合目、底板・キースイッチ・キーキャップの取り付けです。
+目次 使用する部品 底板の取り付け 中段のキースイッチの取り付け 下段のキースイッチの取り付け 残りのキースイッチの取り付け キーキャップの取り付け 交換用サムスティックの取り付け 登頂!!!!!!!!!! 使用する部品キットに含まれるもの 品目 必要数 底面アクリル板 1 5mmネジ 4 ナット 4 ゴム足 適量 スイッチプレート2 1 スイッチプレート3 1 キット以外で必要なもの 品目 必要数 キースイッチ 22 キーキャップ 22 底板の取り付けメイン基板の裏面に底面アクリル板を付けます。基板の表面にナットをあてがい、裏面から5mmネジを通します。
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline"> <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+      
+
+      
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://jetJaguar-psx.github.io/mds_v1/right/mds_01_mainboard/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">無限打鍵山脈 v1 1合目：メイン基板の部品取り付け（右手用）</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  111112 April 11
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    自作キーボードキット「無限打鍵山脈」のビルドガイド1合目、メイン基板の部品の取り付けです。
+目次 使用する部品 部品のはんだ付け Pro microにコンスルーピンを付ける Pro micro固定プレートのネジ止め 1合目、踏破！ 使用する部品キットに含まれるもの 品目 必要数 メイン基板 1枚 マイコンボード固定用プレート 1枚 5mmスペーサー 2個 3mmネジ 2個 4mmネジ 2個 リセットスイッチ 1個 TRRSジャック 2個 ピンヘッダ（2x3ピン） 1 ジャンパー 2 キット以外で必要なもの 品目 必要数 マイコンボード（Pro Micro） 1個 コンスルーピン（高さ2mm） 2本 部品のはんだ付けピンヘッダ メイン基板の表面中央あたり、画像の位置に2x3ピンのピンヘッダをはんだ付けします。
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline"> <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+      
+
+      
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://jetJaguar-psx.github.io/mds_v1/left/mds_01_mainboard/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">無限打鍵山脈 v1 1合目：メイン基板の部品取り付け（左手用）</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  111112 April 11
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    自作キーボードキット「無限打鍵山脈」のビルドガイド1合目、メイン基板の部品の取り付けです。
+目次 使用する部品 部品のはんだ付け Pro microにコンスルーピンを付ける Pro micro固定プレートのネジ止め 1合目、踏破！ 使用する部品キットに含まれるもの 品目 必要数 メイン基板 1枚 マイコンボード固定用プレート 1枚 5mmスペーサー 2個 3mmネジ 2個 4mmネジ 2個 リセットスイッチ 1個 TRRSジャック 2個 ピンヘッダ（2x3ピン） 1 ジャンパー 2 キット以外で必要なもの 品目 必要数 マイコンボード（Pro Micro） 1個 コンスルーピン（高さ2mm） 2本 部品のはんだ付けピンヘッダ メイン基板の表面中央あたり、画像の位置に2x3ピンのピンヘッダをはんだ付けします。
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline"> <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+      
+    </div>
+  </div>
+  
+  
+
+  
+
+</div>
+
+    
+
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul
+          class="list-inline list-group list-group-horizontal text-center footer-links d-flex justify-content-center flex-row">
+
+          
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="credits copyright text-muted">
+          
+          
+          Shiitake
+          
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+          2025
+          
+
+          
+          &nbsp;&bull;&nbsp;
+          <a href="https://jetJaguar-psx.github.io/">しいたけの部屋</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://jetJaguar-psx.github.io/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://jetJaguar-psx.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function () { $("pre.chroma").css("padding", "0"); }); </script>
+
+    
+  </body>
+</html>
+

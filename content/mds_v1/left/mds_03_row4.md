@@ -112,7 +112,7 @@ L型ピンヘッダを接続用基板に差し込み、はんだ付けします�
 &nbsp;
 
 
-<h2><a id="section4">基板4-1の取り付け</a></h2>
+<h2><a id="section5">基板4-1の取り付け</a></h2>
 
 ![](/images/mds_v1/left/03/connector/connector_attached.jpg)
 
@@ -127,7 +127,7 @@ L型ピンヘッダ、ピンソケットをはんだ付けします。
 &nbsp;
 &nbsp;
 
-<h2><a id="section5">スイッチプレート等の取り付け</a></h2>
+<h2><a id="section6">スイッチプレート等の取り付け</a></h2>
 
 ![](/images/mds_v1/left/03/plate/parts.jpg)
 
@@ -150,8 +150,8 @@ L型ピンヘッダ、ピンソケットをはんだ付けします。
 &nbsp;
 &nbsp;
 
-<h2><a id="section6">3合目、踏破！！！</a></h2>
+<h2><a id="section7">3合目、踏破！！！</a></h2>
 
 これにて親指キーとジョイスティックの組み立ては完了です。次は中段の組み立てです。
 
-[4合目：中段の組み立て（左手用）](./../../mds_v1/left/mds_04_row2)
+[4合目：中段の組み立て（左手用）](./../../left/mds_04_row2)
