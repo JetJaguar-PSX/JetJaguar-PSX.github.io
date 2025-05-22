@@ -4,7 +4,7 @@ date: 2024-03-09T10:36:49+09:00
 description : ""
 tags: [""]
 image : ""
-draft: true
+draft: false
 ---
 
 自作キーボードキット「無限打鍵山脈」の使い方についての説明です。
@@ -36,11 +36,11 @@ draft: true
 
 キーマップ変更に用いるWebサイト「Remap」にて配布しています。お手持ちのキーボードに対応するリンクを選択してください。
 
-<!-- [無限打鍵山脈 左手のみ ファームウェア配布ページ]() -->
+[無限打鍵山脈 左手のみ ファームウェア配布ページ](https://remap-keys.app/catalog/ulQj7GFY8uevLD9rrB6D/firmware)
 
-<!-- [無限打鍵山脈 右手のみ ファームウェア配布ページ]() -->
+[無限打鍵山脈 右手のみ ファームウェア配布ページ](https://remap-keys.app/catalog/IvFOAbAFiegg9jWn8fyH/firmware)
 
-[無限打鍵山脈 左右ペア ファームウェア配布ページ]()
+[無限打鍵山脈 左右ペア ファームウェア配布ページ](https://remap-keys.app/catalog/G0Wrw3WbXSrRqRedj3F4/firmware)
 
 &nbsp;
 
