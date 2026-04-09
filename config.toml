@@ -24,6 +24,9 @@ summaryLength  = "30"
       unsafe = true
 
 [Params]
+  [params.author]
+    name = "Shiitake"
+    website = "https://Jetjaguar-PSX.github.io"
 selfHosted = true
 mainSections = ["post","posts"]
 dateFormat = "2023 January 2"
@@ -41,6 +44,7 @@ lastmod = false
 rss = false
 pagination = "10"
 hideAuthor = true
+showAuthor = false
 # authorInfo = "She was born to be free, let her run wild in her own way and you will never lose her."
 # description="Your can add your website description here."
 previewCardImagePlacement = "bottom"

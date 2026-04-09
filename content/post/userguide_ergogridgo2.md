@@ -77,7 +77,14 @@ Bootloaderの欄は、Pro microを使用する場合「caterina」を選択し�
 
 <h2><a id="section2">キーマップの変更</a></h2>
 
-ErgoGridGoシリーズは[Remap](https://remap-keys.app/)または[Vial](https://get.vial.today/)でキーマップを変更することができます。
+ErgoGridGoシリーズは[Remap](https://remap-keys.app/)でキーマップを変更することができます。
+
+### カスタムキーコード
+ErgoGridGoシリーズには、MacやiPadなどのApple製品をご利用の方のためのカスタムキーコードを実装しております。
+- LCTL_CMD_AUTO：MacやiPadではCommandキー、Windowsなど他のOSではControlキーとして動作
+- RCTL_CMD_AUTO：同上
+- MUHENKAN_EISUU_AUTO：MacやiPadでは英数キー、Windowsなど他のOSでは無変換キーとして動作
+- HENKAN_KANA_AUTO：MacやiPadではかなキー、Windowsなど他のOSでは変換キーとして動作
 
 &nbsp;
 

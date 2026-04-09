@@ -127,17 +127,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jetJaguar-psx.github.io/subfolder/</loc>
+    <loc>https://jetJaguar-psx.github.io/bin/</loc>
     <lastmod>2025-02-14T00:00:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jetJaguar-psx.github.io/subfolder/five-sense_hacking/</loc>
+    <loc>https://jetJaguar-psx.github.io/bin/five-sense_hacking/</loc>
     <lastmod>2025-02-14T00:00:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jetJaguar-psx.github.io/subfolder/mini_game/</loc>
+    <loc>https://jetJaguar-psx.github.io/bin/mini_game/</loc>
     <lastmod>2025-02-10T00:00:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -154,6 +154,16 @@
   </url><url>
     <loc>https://jetJaguar-psx.github.io/mds_v1/userguide/</loc>
     <lastmod>2024-03-09T10:36:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jetJaguar-psx.github.io/egg1/</loc>
+    <lastmod>2024-03-06T00:25:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jetJaguar-psx.github.io/egg1/buildguide_ergogridgo/</loc>
+    <lastmod>2024-03-06T00:25:45+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
